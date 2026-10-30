@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "record_kind": "static_mock_readiness",
+  "synthetic": true,
+  "purpose": "Illustrate a human-input-to-review coordination transition",
+  "example_fact": "The fictional sample room has two green chairs",
+  "example_fact_source": "Static illustration, not a human attestation",
+  "real_environment_readiness": "not_assessed",
+  "coordination_evidence_location": "Private task records",
+  "expected_sequence": [
+    "Producer starts without execution stages",
+    "A named human receives a human-only synthetic question",
+    "Producer retains ownership and ends its run while waiting in review",
+    "The authenticated human response resumes a later producer run",
+    "Producer attaches the independent review policy while in progress and reads it back",
+    "Producer publishes an immutable static candidate",
+    "Separate review and verification tasks examine the same candidate and private evidence",
+    "Their completed reports unblock the producer",
+    "Producer submits the unchanged candidate for the native review decision"
+  ],
+  "authority_limits": {
+    "provisioning_authorized": false,
+    "deployment_authorized": false,
+    "framework_acceptance_established": false,
+    "cross_company_authority_established": false
+  },
+  "suite_sha": "not_applicable_manual_static_fixture",
+  "image_digest": "not_applicable_manual_static_fixture"
+}
