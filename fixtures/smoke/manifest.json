@@ -1,0 +1,7 @@
+{
+  "fixtureId": "synthetic-delivery-manifest",
+  "candidateVersion": "C0",
+  "purpose": "Provide a static synthetic delivery manifest for independent inspection.",
+  "expectedOutcome": "The manifest contains all required metadata for a public-safe synthetic fixture.",
+  "publicSafe": true
+}
