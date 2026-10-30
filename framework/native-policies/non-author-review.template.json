@@ -1,0 +1,18 @@
+{
+  "executionPolicy": {
+    "mode": "normal",
+    "commentRequired": true,
+    "stages": [
+      {
+        "type": "review",
+        "approvalsNeeded": 1,
+        "participants": [
+          {
+            "type": "agent",
+            "agentId": "REPLACE_WITH_AUTHORIZED_NON_AUTHOR_UUID"
+          }
+        ]
+      }
+    ]
+  }
+}

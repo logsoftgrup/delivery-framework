@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public-safe Phase B static evidence manifest",
+  "description": "This schema describes evidence structure; schema conformance is not proof that a capability passed. Keep private evidence in the control plane.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "criterionId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorRole": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "branch",
+        "commitSha",
+        "paths"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commitSha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "documentRevisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actual": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNAVAILABLE"
+      ]
+    },
+    "observedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidenceReferences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicSafe": {
+      "const": true
+    },
+    "softwareIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "reason"
+      ],
+      "properties": {
+        "mode": {
+          "const": "manual-static-fixture"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "nativeDecision": {
+      "type": "object",
+      "properties": {
+        "decisionId": {
+          "type": "string"
+        },
+        "participantBefore": {
+          "type": "string"
+        },
+        "returnAssignee": {
+          "type": "string"
+        },
+        "assigneeAfter": {
+          "type": "string"
+        },
+        "outcome": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sessionEvidence": {
+      "type": "object",
+      "properties": {
+        "runBefore": {
+          "type": "string"
+        },
+        "runAfter": {
+          "type": "string"
+        },
+        "sessionBefore": {
+          "type": "string"
+        },
+        "sessionAfter": {
+          "type": "string"
+        },
+        "scopeEvidenceReference": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "criterionId",
+    "task",
+    "authorRole",
+    "candidate",
+    "documentRevisions",
+    "expected",
+    "actual",
+    "outcome",
+    "observedAt",
+    "evidenceReferences",
+    "limitations",
+    "publicSafe",
+    "softwareIdentity"
+  ]
+}
