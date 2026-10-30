@@ -1,0 +1,5 @@
+{
+  "purpose": "Synthetic native-runtime publication check",
+  "role": "assurance",
+  "no_product_functionality": true
+}
