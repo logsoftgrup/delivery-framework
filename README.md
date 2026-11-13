@@ -20,6 +20,12 @@ Fill the templates with actual owners, criteria and immutable references before 
 
 Publication does not authorize main merge, deployment, release or product development. Human and operational approvals retain their own gates. Changed inputs invalidate affected evidence, even when native resubmission resumes a previously failed stage.
 
+## Evidence provenance
+
+The evidence schema requires `authorReference` separately from `authorRole`. Public copies use a privacy-safe opaque author reference; private control-plane evidence resolves it to the actual author. Do not publish internal identity records or private links to satisfy this contract.
+
+`documentRevisions` contains nonblank references to applicable immutable document/configuration revisions. Private references may use opaque aliases with a resolvable private mapping. If no such revision applies, use an empty array and a nonblank `documentRevisionsNotApplicableReason`; omit that reason when revisions apply. Missing required evidence is not N/A. Reviewers verify identity mappings, immutable revision retrieval and any N/A justification: structural conformance alone proves none of these.
+
 ## Phase boundary
 
 Phase B uses static synthetic fixtures, manual inspection and native records. Actions remains disabled. No formal automated suite, application, container build, persistent hosting or deployment is part of this package. TS/TC templates are reusable guidance for separately authorized work, not an instruction to execute Phase C.

@@ -17,6 +17,12 @@
       "type": "string",
       "minLength": 1
     },
+    "authorReference": {
+      "description": "Privacy-safe reference to the individual author, distinct from their role. The private control-plane evidence must resolve this reference to the actual identity; do not publish private identity or configuration.",
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
     "candidate": {
       "type": "object",
       "additionalProperties": false,
@@ -50,10 +56,19 @@
       }
     },
     "documentRevisions": {
+      "description": "Applicable immutable document/configuration revision references. Private references may use opaque aliases resolvable in the control plane. An empty array requires documentRevisionsNotApplicableReason; inaccessible or missing required revisions are not N/A.",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
       }
+    },
+    "documentRevisionsNotApplicableReason": {
+      "description": "Explicit justification that no document/configuration revision applies. Only allowed with an empty documentRevisions array; not a substitute for missing required evidence.",
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
     },
     "expected": {
       "type": "string",
@@ -151,10 +166,25 @@
       "additionalProperties": false
     }
   },
+  "oneOf": [
+    {
+      "properties": {
+        "documentRevisions": { "minItems": 1 }
+      },
+      "not": { "required": ["documentRevisionsNotApplicableReason"] }
+    },
+    {
+      "properties": {
+        "documentRevisions": { "maxItems": 0 }
+      },
+      "required": ["documentRevisionsNotApplicableReason"]
+    }
+  ],
   "required": [
     "criterionId",
     "task",
     "authorRole",
+    "authorReference",
     "candidate",
     "documentRevisions",
     "expected",
