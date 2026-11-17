@@ -1,17 +1,17 @@
 {
   "schema": "delivery-lab.static-baseline.v1",
-  "baseline": "BASE-1",
+  "baseline": "BASE-2",
   "created_date": "2026-11-17",
   "status": "candidate-awaiting-independent-examination-and-native-approval",
   "source_task": "LOGA-21",
   "producer_agent_id": "07abe685-fbb1-4658-9dbe-187d9fe540aa",
-  "producer_run_id": "f3ef7ae2-ed2b-40ca-906e-afe9eed8c05b",
+  "producer_run_id": "641f9d2f-1365-484b-a62e-93a5be855bd4",
   "candidate_identity": {
     "repository": "https://github.com/logsoftgrup/delivery-framework.git",
     "authorized_branch": "smoke/phase-b",
     "commit_binding": "The enclosing immutable Git commit is recorded in the native publication packet. No self-referential commit field. Retrieve all paths at that exact commit.",
     "manifest_identity": "Record this file Git blob and SHA-256 externally in the publication packet; this manifest does not hash itself.",
-    "base_commit": "a363fe1fd618ecaef1ec60b0188da2bb331f0ca7",
+    "base_commit": "f051bda31ec49ec022aeccf7783b648d0505f851",
     "writable_scope": "pilot/delivery-lab/docs/"
   },
   "inputs": {
@@ -75,10 +75,10 @@
   "files": [
     {
       "path": "pilot/delivery-lab/docs/acceptance.md",
-      "revision": "BASE-1",
-      "bytes": 10133,
-      "sha256": "0bbe96ac49b2e32be84c814e0d976bd754e42251bce48ebc957306fdd6af7bec",
-      "git_blob_sha1": "8318ec2fa44d318158a4c4ea87c07e2ce1ebbe8d"
+      "revision": "BASE-2",
+      "bytes": 10462,
+      "sha256": "eb4a8d665e0c4eb42e29769129b8d4ea514e16b5ee0950b1843c386e1edfe0f8",
+      "git_blob_sha1": "a2acdc0e752928cce3a15d2e53665207e5ac953b"
     },
     {
       "path": "pilot/delivery-lab/docs/accessibility.md",
@@ -89,10 +89,10 @@
     },
     {
       "path": "pilot/delivery-lab/docs/api.md",
-      "revision": "BASE-1",
-      "bytes": 10501,
-      "sha256": "afc99c599d133de1bb491e9bbb82b1da7e4d89f8a68c47f0e1b25402e097ad40",
-      "git_blob_sha1": "f7c3ea2acd8154ad6d5a8de5bbd6b0e9b9cef181"
+      "revision": "BASE-2",
+      "bytes": 11483,
+      "sha256": "d1f588a84c431460110b5dd69ba978534d45fa69f6a7fe15494bcc66dba7c4a5",
+      "git_blob_sha1": "394903ad456dcabb513ecc6dcbd52208c1835ce0"
     },
     {
       "path": "pilot/delivery-lab/docs/architecture.md",
@@ -200,5 +200,28 @@
     "human_approver_id": "aF9BHPX4C09h2VUawmZCQ2fRaahri14d",
     "original_producer_return_id": "07abe685-fbb1-4658-9dbe-187d9fe540aa",
     "decision": "pending; producer does not accept own output"
+  },
+  "correction_of": {
+    "baseline": "BASE-1",
+    "candidate_commit": "f051bda31ec49ec022aeccf7783b648d0505f851",
+    "native_changes_requested_decision": "0b98da50-e61b-4745-b756-d53782a1c05f",
+    "review_document_revision": "5e920782-8f94-40ae-8593-665a7714f168",
+    "BASE_R_report_revision": "10eb9073-6423-4115-955e-8c42970c01f0",
+    "BASE_V_report_revision": "75889c0a-d20e-41b2-90ef-10d209f04a53",
+    "producer_changes": [
+      {
+        "finding": "BASEV-F01",
+        "description": "Scope no-write guarantee to rejected request checks and definite no-commit storage failures; unexpected 500 remains uncertain and requires reconciliation."
+      },
+      {
+        "finding": "BASEV-F02",
+        "description": "Explicit readiness 503 exception to common error envelope; exact status-only not-ready body retained."
+      }
+    ],
+    "retained_observations": [
+      "BASE.R OBS-01: exact origin/Host rejection response and precedence remain due before downstream oracle is fixed.",
+      "BASE.R OBS-02: recovery-target qualifying subset and still-open O2 release proof remain due in runtime packet."
+    ],
+    "acceptance": "pending fresh affected independent examination and native review; not producer-approved"
   }
 }

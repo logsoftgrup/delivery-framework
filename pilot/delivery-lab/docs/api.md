@@ -45,17 +45,17 @@ Published structural schemas (JSON Schema 2020-12 notation):
 
 ## Validation and error priority
 
-Process in this order; return only the first error in the table, with no database changes. No silent string conversion. A JSON string containing an unpaired surrogate is a field validation error. Input must be valid UTF-8; duplicate object keys, NaN/Infinity and empty bodies count as malformed JSON. Maximum request body is 16,384 UTF-8 bytes before parsing (including whitespace); do not use a byte limit as the name length rule.
+Apply the request checks (413, 415, 400 and 422 rows) in the listed order and return only the first rejection, before any database write. These rejected checks change no records. The storage and unexpected-failure rows describe execution outcomes after validation; their database-effect rules are specified below. In particular, a 500 response does not guarantee that no commit occurred. No silent string conversion. A JSON string containing an unpaired surrogate is a field validation error. Input must be valid UTF-8; duplicate object keys, NaN/Infinity and empty bodies count as malformed JSON. Maximum request body is 16,384 UTF-8 bytes before parsing (including whitespace); do not use a byte limit as the name length rule.
 
 Trim only these code points from both ends, repeatedly: U+0009–U+000D, U+0020, U+0085, U+00A0, U+1680, U+2000–U+200A, U+2028, U+2029, U+202F, U+205F, U+3000. This explicit set is stable regardless of runtime Unicode version. U+200B and U+FEFF are not trimmed. Preserve interior whitespace and every other scalar, including combining marks, non-Latin and astral characters; no normalization, case folding or grapheme-based count. After trimming, count Unicode scalar code points: an astral symbol counts as one; `e` plus a combining accent counts as two. UI must use the same set and count; JavaScript string length/HTML maxlength alone are insufficient. Accepted names, including control/markup-looking characters, are rendered as text, with line wrapping and no HTML interpretation.
 
-Every failure body has exactly this envelope; `fields` is empty for non-field errors:
+Error responses use the common envelope below, except for the explicitly specified not-ready response from `GET /readyz`: its 503 body is exactly `{"status":"not_ready"}`, as defined under Operational endpoints. That readiness response has no `error` member. In the common envelope, `fields` is empty for non-field errors:
 
 ```json
 {"error":{"code":"validation_error","message":"Check the request fields.","fields":[{"field":"name","code":"name_length","message":"Enter 1–80 characters after trimming surrounding whitespace."}]}}
 ```
 
-Envelope: object with only `error`; error contains string `code`, string `message`, array `fields`; each field entry contains only string `field`, `code`, `message`. For validation, one entry only. Property order is immaterial. Never echo submitted names, internal exceptions, SQL or paths in errors.
+Common error envelope: object with only `error`; error contains string `code`, string `message`, array `fields`; each field entry contains only string `field`, `code`, `message`. For validation, one entry only. Property order is immaterial. Never echo submitted names, internal exceptions, SQL or paths in errors.
 
 | Order / condition | HTTP | error.code / error.message | fields entry (field; code; message) |
 |---|---|---|---|
@@ -68,10 +68,10 @@ Envelope: object with only `error`; error contains string `code`, string `messag
 | name not a string, including null, bool, number, list, object | 422 | as above | `name`; `name_type`; `Name must be text.` |
 | Unpaired surrogate in name | 422 | as above | `name`; `name_unicode`; `Use valid Unicode text.` |
 | Trimmed scalar count outside 1–80 | 422 | as above | `name`; `name_length`; `Enter 1–80 characters after trimming surrounding whitespace.` |
-| Storage not ready, locked beyond 5 seconds, or transaction rolled back | 503 | `storage_unavailable` / `Items are temporarily unavailable. Try again.` | empty |
+| Storage not ready or locked beyond 5 seconds before any write, or a verified transaction rollback | 503 | `storage_unavailable` / `Items are temporarily unavailable. Try again.` | empty |
 | Unexpected failure | 500 | `internal_error` / `Something went wrong. Check the list before trying again.` | empty |
 
-Unknown route: 404 `not_found` / `This route does not exist.`; unsupported method on a known route: 405 `method_not_allowed` / `This method is not supported.` with HTTP Allow; both use empty fields. Errors in GET use the same storage/internal envelope. Rejected validation/media/size/parse requests and explicit rolled-back 503 responses insert zero records. A transport failure, timeout or unexpected 500 can leave commit outcome unknown; see recovery below. Retry timing is user-controlled; there is no automatic POST retry and no idempotency key contract.
+Unknown route: 404 `not_found` / `This route does not exist.`; unsupported method on a known route: 405 `method_not_allowed` / `This method is not supported.` with HTTP Allow; both use empty fields. Errors in `GET /api/items` use the same storage/internal envelope. Rejected validation/media/size/parse requests insert zero records. An items-API `storage_unavailable` 503 also guarantees no inserted record: issue it only when the write transaction never began or its rollback is confirmed. If commit or rollback cannot be confirmed, do not report that definite-rejection 503. A transport failure, timeout or unexpected 500 can leave commit outcome unknown, including a commit followed by response-construction failure; those outcomes do not guarantee an unchanged database. Follow the reconciliation rule below even when the server returned a parseable 500 envelope. Retry timing is user-controlled; there is no automatic POST retry and no idempotency key contract.
 
 ## Boundary and failure expectations
 

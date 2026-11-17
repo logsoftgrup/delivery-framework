@@ -1,6 +1,8 @@
 # Delivery Lab baseline — acceptance contract
 
-Baseline `BASE-1`, 2026-11-17. This is a static design candidate for independent examination and human baseline approval. It contains no application, executable test suite, deployed service or runtime PASS. All data, examples and eventual fixtures are synthetic. The implementation candidates C0 and C1 are separate from this baseline.
+Baseline `BASE-2`, 2026-11-17. This is a static design candidate for independent examination and human baseline approval. It contains no application, executable test suite, deployed service or runtime PASS. All data, examples and eventual fixtures are synthetic. The implementation candidates C0 and C1 are separate from this baseline.
+
+BASE-2 corrects BASE-1’s API failure-contract wording after native changes-requested. The BASE-1 visual reference and other unchanged documents remain the same file revisions; the new manifest records each exact file identity. Earlier examination reports remain historical evidence and do not accept this corrected candidate.
 
 ## Authority and immutable inputs
 
@@ -33,7 +35,7 @@ One page, one create form, one item list. List and create only. No edit/delete/s
 
 ## Lifecycle and evidence
 
-1. Publish BASE-1 on authorized `smoke/phase-b`; retrieve its full SHA and complete file set through a separate remote fetch. `baseline-manifest.json` hashes files; its own identity is its Git blob plus the enclosing commit, avoiding self-reference. Source packet records all identities.
+1. Publish BASE-2 on authorized `smoke/phase-b`; retrieve its full SHA and complete file set through a separate remote fetch. `baseline-manifest.json` hashes files; its own identity is its Git blob plus the enclosing commit, avoiding self-reference. Source packet records all identities.
 2. Save/read back precise inputs to existing BASE.R (LOGA-25) and BASE.V (LOGA-26), retaining Assurance `ce8e0a2f-a532-45cb-abeb-a3937e9be71e`. Release ready examinations and attach real native blockers to this source. They do not depend on source completion. Neither task may repair this candidate.
 3. Completed static examinations may carry FAIL. Keep the unchanged candidate, exact report revisions, findings and limitations. Save/read back continuation, then submit source for configured Assurance review followed by native human baseline approval. Submission is the final required operation in that run. No self-acceptance.
 4. On changes-requested, verify exact failed SHA and native returnAssignee equals the original producer before correction. Publish a new SHA and refresh affected examinations on the same tasks; preserve old reports. Never repair during examination/review.
