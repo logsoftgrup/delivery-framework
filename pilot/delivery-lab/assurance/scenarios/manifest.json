@@ -1,13 +1,215 @@
 {
   "schema": "delivery-lab.scenario-manifest.v1",
-  "candidate": "TS-2",
+  "candidate": "TS-3",
   "task": "LOGA-22",
   "author_agent_id": "ce8e0a2f-a532-45cb-abeb-a3937e9be71e",
-  "author_run_id": "e906da08-152b-4d88-a9c6-95733d4cf0c9",
+  "author_run_id": "e953940b-a069-4776-b62d-7903f0068dbe",
   "repository": "https://github.com/logsoftgrup/delivery-framework.git",
   "publication_branch": "assurance/phase-b",
   "candidate_commit_location": "Exact full SHA and this manifest SHA-256 in task publication packet; branch is locator only.",
   "baseline": {
+    "commit": "a76f458655c9bd2a8ef95562651e0c9155f6a878",
+    "native_final_decision": "f34e7937-ab56-4b66-a509-a02975629681",
+    "native_assurance_decision": "745e7918-7cc9-454d-9786-d0b329b89fef",
+    "input_document_revision": "53ffc545-66ae-4619-90a9-4167c988193b",
+    "base_review_report_revision": "055cd714-be50-48d5-9bc4-00664ffff60d",
+    "base_verification_report_revision": "b40699d2-8dea-47c5-b188-848e47cfbffa",
+    "files": [
+      {
+        "path": "pilot/delivery-lab/docs/acceptance.md",
+        "git_blob": "134b02e0bf995eea477545c0ba3709455994df7f",
+        "bytes": 13507,
+        "sha256": "90a942e8e10f2d564c3a6ec7e85a81c6ae4f4b2f49513393a4ac935a5be66b78"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/accessibility.md",
+        "git_blob": "dea31f50837318da903aed33964d2dfd273e7cfa",
+        "bytes": 10768,
+        "sha256": "62a9199cbd064340809b04106b2fe04372fbda522d79cf016a59e26877aed9d9"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/api.md",
+        "git_blob": "fafa191c3a86db0b028271026984f737ea8e0b46",
+        "bytes": 18133,
+        "sha256": "3b36352ff7c7e858210565281947379e4273a756f8d9bc892d61572d5b0a2bb5"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/architecture.md",
+        "git_blob": "8e010400b0a9d664d849616bb76c69f9b69153bf",
+        "bytes": 11663,
+        "sha256": "57ff6307532dd55975f8854012a214dbe6f6e3bb3a8732bce2971b1ac9303728"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/baseline-manifest.json",
+        "git_blob": "f1a55d81025b3e6da04c6ac03406b90a427b4831",
+        "bytes": 10760,
+        "sha256": "4998e30cef6a3a57d7e71b8221670ff095ca999bdc66b28c29ab513f7fc83f28"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/runbook.md",
+        "git_blob": "618b855068e5a3cebd553a8aa23816d7a12dd982",
+        "bytes": 15763,
+        "sha256": "08538eb68fb16a98efbb6f73231d77ac96812f4f1fbe40a78d5ebcf6a572c10a"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/ui-reference.md",
+        "git_blob": "d09e188f2e25b937057584d2cd1f284a377b4b07",
+        "bytes": 6728,
+        "sha256": "d42c58e5e9bbfdcddb7c7b1bfc44996efe2c3c7a9fdd1497016c40e002a75000"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/ui-reference.svg",
+        "git_blob": "5adbd7b9ec6e058ec3c32e77710bdd110b799f1e",
+        "bytes": 4487,
+        "sha256": "393ff8dd173cdf557837f43794a488f463efa1ec5d1e84dbb993506bfed5982f"
+      }
+    ]
+  },
+  "framework_commit": "5c594e3087d68a8862072998478864f6ee18a253",
+  "files": [
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/README.md",
+      "file_revision": "TS-3",
+      "bytes": 7404,
+      "sha256": "462329473d3692e766fcdbf765a579673cf3c50f43988c5394da08ea1b9b6ea1"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/accessibility.md",
+      "file_revision": "TS-1",
+      "bytes": 12489,
+      "sha256": "e9b10a13c4ce02af510a0044089c3ebdec6e7d947fe47f7c26498d9343a70a7c"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/api.md",
+      "file_revision": "TS-3",
+      "bytes": 25303,
+      "sha256": "8f12e4443ed47753dcdd4c7a2d51db2b1ade94a29a29c06d7bf1991a8e96a2f1"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/browser-input.md",
+      "file_revision": "TS-2",
+      "bytes": 6950,
+      "sha256": "e9f63e5457a1e098f15ea48dfbef512cefd283d9ab73270d9bf69e9daf754471"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/browser-manual.md",
+      "file_revision": "TS-2",
+      "bytes": 11082,
+      "sha256": "596ab96211976faa449c48113f2367787b74c5809ce61b636c1db6f15539c41f"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/coverage.md",
+      "file_revision": "TS-3",
+      "bytes": 6355,
+      "sha256": "6b771a384a6d4d7da8e02f777065ea58ab3a96c41af82f54c5ed5191d03dc7fc"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/fixtures.json",
+      "file_revision": "TS-2",
+      "bytes": 201486,
+      "sha256": "fdbf49f59cf803d7646a63729a9a98eb2b8e85360aded1708348247018afc8f9"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/harness.md",
+      "file_revision": "TS-2",
+      "bytes": 5983,
+      "sha256": "c5a57179df0de572f2299399754397bff157af3cb428bd59b452a7fa8246b3af"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/impact-ts-2.md",
+      "file_revision": "TS-2",
+      "bytes": 5348,
+      "sha256": "7058b11c7012c2f13de2ebd5be8c20dbb9c9d6b6d22604ea80a5f6d14be092a2"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/impact-ts-3.md",
+      "file_revision": "TS-3",
+      "bytes": 5224,
+      "sha256": "6621a12856753e337c48efcf5e8c47e845c04ba746b76e9adcd20ee6bda18f0f"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/operations-lifecycle.md",
+      "file_revision": "TS-1",
+      "bytes": 12497,
+      "sha256": "b69585d391165317b26155b1b5a6ecbcb34ee130502260c8e579e02fa5c0619f"
+    }
+  ],
+  "criteria": [
+    "B1",
+    "B2",
+    "T1",
+    "T2",
+    "V1",
+    "A1",
+    "U1",
+    "O1",
+    "O2",
+    "L1"
+  ],
+  "scope": "Scenario documentation and synthetic fixture specification only; no executable tests, app code, runtime examination or acceptance.",
+  "parameter_inventory": {
+    "name_variants": 102,
+    "raw_byte_variants": 12,
+    "trim_scalars": 25,
+    "wcag_A_AA_rows": 55,
+    "browser_entry_variants": 102,
+    "browser_cr_lf_sanitized_variants": 12,
+    "api_created_control_display_variants": 6,
+    "scenario_family_members": 88,
+    "security_parameter_rows": {
+      "SEC-01": 12,
+      "SEC-02": 13,
+      "SEC-03": 15,
+      "expansion": "Each row alternative plus declared I/H instance/host combinations; conditional route prerequisites retained."
+    }
+  },
+  "open_expectations": [
+    {
+      "id": "OBS-02",
+      "scenarios": [
+        "OPS-07",
+        "OPS-08",
+        "OPS-09"
+      ],
+      "state": "RETAINED_QUALIFICATION_RULE",
+      "requirement": "Exact C1 target and independently passed qualifying subset; no full-O2 prerequisite for starting O2; no C0 target or distinct-release claim."
+    }
+  ],
+  "runtime": {
+    "application_commit": null,
+    "suite_commit": null,
+    "image_digest": null,
+    "ci_run": null,
+    "observed_results": "NOT RUN; not authorized in TS"
+  },
+  "independent_review": {
+    "task": "LOGA-27",
+    "agent_id": "79ebc7d5-2399-4e63-aaff-a29207a852c1",
+    "state": "fresh affected TS-3 examination pending; prior TS-1/TS-2 FAIL reports retained"
+  },
+  "self_hash_rule": "Manifest omits its own content hash; publication task packet records it.",
+  "previous_candidate": {
+    "name": "TS-2",
+    "commit": "4fe13631a568df29f96a8685d5f674a968150d44",
+    "manifest_sha256": "e3d3c038fb713cab33481ad20dcc4c79406e3422cca7df3dbe56090a24f2f823",
+    "report_revision": "a7936f93-c32c-4b13-8ab1-3d067f185048",
+    "report_outcome": "FAIL: TSR-01 open; TSR-02/03 closed",
+    "native_changes_requested_decision": "a45bf6c8-c45e-41b0-9f13-a87373e0a16b"
+  },
+  "change_scope": {
+    "impact_document": "pilot/delivery-lab/assurance/scenarios/impact-ts-3.md",
+    "author_corrections_awaiting_review": [
+      "TSR-01"
+    ],
+    "prior_independently_closed": [
+      "TSR-02",
+      "TSR-03"
+    ],
+    "unresolved_missing_contract_inputs": [],
+    "api_15_related_change": "Admitted OPTIONS now explicitly follows 405 E-METHOD after Host/Origin admission; existing HEAD/Allow serialization limits retained.",
+    "original_literal_validation_data_cases_unchanged": true
+  },
+  "original_baseline": {
     "commit": "3f0246514d8c8d4fee34aa5181d2f435303d3e6b",
     "native_human_decision": "4ae65f45-e6b8-4080-81b3-bdf2e4cd6353",
     "input_document_revision": "0f58973b-dd68-452e-b88d-c673c8a35fe7",
@@ -54,146 +256,26 @@
       }
     ]
   },
-  "framework_commit": "5c594e3087d68a8862072998478864f6ee18a253",
-  "files": [
+  "candidate_history": [
     {
-      "path": "pilot/delivery-lab/assurance/scenarios/README.md",
-      "file_revision": "TS-2",
-      "bytes": 6790,
-      "sha256": "37dc9adbc93c886d11f59e39726843fa156f462309c61b504c06a09c847d6423"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/accessibility.md",
-      "file_revision": "TS-1",
-      "bytes": 12489,
-      "sha256": "e9b10a13c4ce02af510a0044089c3ebdec6e7d947fe47f7c26498d9343a70a7c"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/api.md",
-      "file_revision": "TS-2",
-      "bytes": 11361,
-      "sha256": "eab31863d153800eb89c6840beb1a88a02cefbdf804cc7cfe6b67d988a4db6de"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/browser-input.md",
-      "file_revision": "TS-2",
-      "bytes": 6950,
-      "sha256": "e9f63e5457a1e098f15ea48dfbef512cefd283d9ab73270d9bf69e9daf754471"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/browser-manual.md",
-      "file_revision": "TS-2",
-      "bytes": 11082,
-      "sha256": "596ab96211976faa449c48113f2367787b74c5809ce61b636c1db6f15539c41f"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/coverage.md",
-      "file_revision": "TS-2",
-      "bytes": 5013,
-      "sha256": "136d32c306b9f496ee878ad5f2a051de3fe4174536f09844813150a6822a4fb0"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/fixtures.json",
-      "file_revision": "TS-2",
-      "bytes": 201486,
-      "sha256": "fdbf49f59cf803d7646a63729a9a98eb2b8e85360aded1708348247018afc8f9"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/harness.md",
-      "file_revision": "TS-2",
-      "bytes": 5983,
-      "sha256": "c5a57179df0de572f2299399754397bff157af3cb428bd59b452a7fa8246b3af"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/impact-ts-2.md",
-      "file_revision": "TS-2",
-      "bytes": 5348,
-      "sha256": "7058b11c7012c2f13de2ebd5be8c20dbb9c9d6b6d22604ea80a5f6d14be092a2"
-    },
-    {
-      "path": "pilot/delivery-lab/assurance/scenarios/operations-lifecycle.md",
-      "file_revision": "TS-1",
-      "bytes": 12497,
-      "sha256": "b69585d391165317b26155b1b5a6ecbcb34ee130502260c8e579e02fa5c0619f"
+      "name": "TS-1",
+      "commit": "8dee618fa6f0718e09aa39b54f0c9b231452a0f7",
+      "manifest_sha256": "b33db8bcf7f0e1752572dd8c05f94459c934bfb86d0060175d05b8eea17d8037",
+      "report_revision": "5d0e49bd-f23e-4ca2-9c16-596e78e03013",
+      "report_outcome": "FAIL",
+      "native_changes_requested_decision": "a45bf6c8-c45e-41b0-9f13-a87373e0a16b",
+      "source_review_revision": "146c26d0-ba07-42f6-97b5-a9d0344c438d"
     }
   ],
-  "criteria": [
-    "B1",
-    "B2",
-    "T1",
-    "T2",
-    "V1",
-    "A1",
-    "U1",
-    "O1",
-    "O2",
-    "L1"
-  ],
-  "scope": "Scenario documentation and synthetic fixture specification only; no executable tests, app code, runtime examination or acceptance.",
-  "parameter_inventory": {
-    "name_variants": 102,
-    "raw_byte_variants": 12,
-    "trim_scalars": 25,
-    "wcag_A_AA_rows": 55,
-    "browser_entry_variants": 102,
-    "browser_cr_lf_sanitized_variants": 12,
-    "api_created_control_display_variants": 6,
-    "scenario_family_members": 88
-  },
-  "open_expectations": [
-    {
-      "id": "OBS-01",
-      "scenarios": [
-        "SEC-01",
-        "SEC-02",
-        "SEC-03"
-      ],
-      "state": "UNRESOLVED",
-      "input_interaction": "5fecfd8f-80db-40be-86a5-7c24033d3672",
-      "requirement": "Original Engineer supplement and any required native baseline/TS amendment before exact rejection status/body/precedence freeze."
-    },
-    {
-      "id": "OBS-02",
-      "scenarios": [
-        "OPS-07",
-        "OPS-08",
-        "OPS-09"
-      ],
-      "state": "RETAINED_QUALIFICATION_RULE",
-      "requirement": "Exact C1 target and independently passed qualifying subset; no full-O2 prerequisite for starting O2; no C0 target or distinct-release claim."
-    }
-  ],
-  "runtime": {
-    "application_commit": null,
-    "suite_commit": null,
-    "image_digest": null,
-    "ci_run": null,
-    "observed_results": "NOT RUN; not authorized in TS"
-  },
-  "independent_review": {
-    "task": "LOGA-27",
-    "agent_id": "79ebc7d5-2399-4e63-aaff-a29207a852c1",
-    "state": "affected TS-2 examination not yet performed; TS-1 FAIL retained"
-  },
-  "self_hash_rule": "Manifest omits its own content hash; publication task packet records it.",
-  "previous_candidate": {
-    "name": "TS-1",
-    "commit": "8dee618fa6f0718e09aa39b54f0c9b231452a0f7",
-    "manifest_sha256": "b33db8bcf7f0e1752572dd8c05f94459c934bfb86d0060175d05b8eea17d8037",
-    "report_revision": "5d0e49bd-f23e-4ca2-9c16-596e78e03013",
-    "report_outcome": "FAIL",
-    "native_changes_requested_decision": "a45bf6c8-c45e-41b0-9f13-a87373e0a16b",
-    "source_review_revision": "146c26d0-ba07-42f6-97b5-a9d0344c438d"
-  },
-  "change_scope": {
-    "impact_document": "pilot/delivery-lab/assurance/scenarios/impact-ts-2.md",
-    "author_corrections_awaiting_review": [
-      "TSR-02",
-      "TSR-03"
+  "accepted_contract_correction": {
+    "id": "OBS-01",
+    "input_state": "Accepted BASE-3 supplied and exact hashes verified",
+    "scenarios": [
+      "SEC-01",
+      "SEC-02",
+      "SEC-03"
     ],
-    "unresolved": [
-      "TSR-01"
-    ],
-    "literal_api_original_cases_unchanged": true
+    "finding": "TSR-01",
+    "finding_state": "Author correction; fresh independent examination pending"
   }
 }
