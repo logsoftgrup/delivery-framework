@@ -1,8 +1,22 @@
 # Delivery Lab baseline — acceptance contract
 
-Baseline `BASE-2`, 2026-11-17. This is a static design candidate for independent examination and human baseline approval. It contains no application, executable test suite, deployed service or runtime PASS. All data, examples and eventual fixtures are synthetic. The implementation candidates C0 and C1 are separate from this baseline.
+Baseline `BASE-3` (OBS-01 amendment), 2026-11-17. This is a static design candidate for independent examination and human baseline approval. It contains no application, executable test suite, deployed service or runtime PASS. All data, examples and eventual fixtures are synthetic. The implementation candidates C0 and C1 are separate from this baseline.
 
-BASE-2 corrects BASE-1’s API failure-contract wording after native changes-requested. The BASE-1 visual reference and other unchanged documents remain the same file revisions; the new manifest records each exact file identity. Earlier examination reports remain historical evidence and do not accept this corrected candidate.
+Accepted BASE-2 at `3f0246514d8c8d4fee34aa5181d2f435303d3e6b` remains historical and accepted by human decision `4ae65f45-e6b8-4080-81b3-bdf2e4cd6353`. It corrected BASE-1's API failure wording; both rounds' reports and decisions remain preserved. BASE-3 adds the OBS-01 Host/Origin clarification and requires fresh existing BASE.R/BASE.V examinations, native Assurance review, then Bogdan approval. Prior acceptance does not accept this amendment. The visual reference and all unaffected documents keep their existing file identities.
+
+## OBS-01 amendment provenance and impact
+
+Production authority: operator comment `b60a7246-35dd-4e70-90e9-ec9cdc9e3a2c` on LOGA-21 and [amendment input](/LOGA/issues/LOGA-21#document-amendment-obs01), revision `4e78fdf2-af33-477e-a53f-371ca3814d03`. Exact technical input: [LOGA-32 proposal v1](/LOGA/issues/LOGA-32#document-obs01-proposal-v1), revision `0daaaae0-2043-4be9-b5f4-8b07e4215bb6`, body SHA-256 `99485f30e8a1b54ab4825a06b988860b4e91bf7ea354decbba277a728d6c7bb0`. Its [native answer receipt](/LOGA/issues/LOGA-32#document-obs01-native-response-v2), revision `43ac0d10-5726-4389-9c31-eb1e405a3e4a`, records answered interaction `5fecfd8f-80db-40be-86a5-7c24033d3672`, actual Engineer run `59b631c1-d81d-4ed3-88ef-ca6f68dc8523`, answer SHA-256 `093199be38f8ccd6fee06121761dd6be56a8d5ceea9e57c43461de7bc057a244`. The proposal/answer are technical inputs, not amendment acceptance.
+
+| Area | Accepted BASE-2 | BASE-3 amendment and evidence owner |
+|---|---|---|
+| T1 / OBS-01 response | Same-origin JSON, common error envelope, no arbitrary Origin reflection; exact admission denials unspecified | [API admission](api.md#request-admission--obs-01-amendment) fixes exact 403 values, headers, zero-write guarantee and HTTP boundary. BASE.R checks completeness/consistency; BASE.V checks literal values and first-failure definitions. |
+| T1 / SEC-03 ordering | Size → media → parsing → existing field-validation priorities | Host → present Origin before all routing, then unchanged create body priorities and storage. Combined-failure precedence is normative. Assurance owns later scenario updates and TC-assigned test code. |
+| O1 / SEC-01 Origin | Cross-origin browser creates rejected; absent Origin unspecified | Present Origin checked on all dispatched routes by exact origin tuple; absent Origin passes; no CORS, authentication claim or external-access proof. |
+| O1 / SEC-02 Host and QA route | Published loopback/localhost with declared ports; separately verified single QA service name permitted | [Architecture](architecture.md#host-and-origin-admission--obs-01-amendment) fixes per-instance authorities and conditional QA alias evidence. No alias is enabled by a placeholder; actual-port and route gates remain. |
+| OBS-01 / TSR-01 / SEC-01–03 handoff | OBS-01 retained; TS-2 still has TSR-01 | This candidate supplies the proposed clarification. Only after amendment acceptance does CEO pass exact accepted identities to Assurance for affected scenarios and fresh existing TS.R. TSR-01 remains open; this document authors no formal scenarios. |
+
+OBS-02 recovery proof, build/CI/runtime readiness, actual appearance/accessibility/usability and final human acceptance remain open. LOGA-20/22 acceptance waits remain; no app/test/runtime/platform work or Phase B reopening is authorized here.
 
 ## Authority and immutable inputs
 
