@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1902" height="988" viewBox="0 0 1902 988" role="img" aria-labelledby="title desc">
+<title id="title">Delivery Lab proposed desktop and mobile reference</title>
+<desc id="desc">Static design proposal, not a runtime screenshot. Desktop 1440 by 900 and mobile 390 by 844. Each shows a synthetic data label, title, one labelled create form, and a three-item list.</desc>
+<rect width="1902" height="988" fill="#e2e8f0"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172033} .muted{fill:#475569} .label{font-size:16px;font-weight:700} .body{font-size:16px} .small{font-size:14px} .title{font-size:32px;font-weight:700} .section{font-size:20px;font-weight:700}</style>
+<text x="24" y="26" class="small">1440 × 900 · proposed desktop</text>
+<g transform="translate(24 42)">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f5f7fb"/>
+<rect x="400" y="70" width="153" height="28" rx="14" fill="#e0e7ff"/>
+<text x="412" y="89" class="small" style="fill:#1e3a8a">SYNTHETIC DATA</text>
+<text x="400" y="146" class="title">Delivery Lab</text>
+<text x="400" y="181" class="body" style="fill:#475569">Create sample items to try the delivery journey.</text>
+<rect x="400" y="215" width="640" height="264" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="424" y="255" class="section">Create an item</text>
+<text x="424" y="294" class="label">Item name</text>
+<rect x="424" y="306" width="592" height="48" rx="6" fill="#ffffff" stroke="#64748b"/>
+<text x="436" y="336" class="body">Pilot notebook</text>
+<text x="424" y="378" class="small" style="fill:#475569">Use 1–80 characters. Surrounding whitespace is removed.</text>
+<rect x="424" y="400" width="116" height="48" rx="6" fill="#1d4ed8"/>
+<text x="457.0" y="430" class="label" style="fill:#ffffff">Create</text>
+<text x="400" y="543" class="section">Items</text>
+<text x="990" y="543" class="small" style="fill:#475569">3 items</text>
+<rect x="400" y="563" width="640" height="60" rx="0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="420" y="600" class="body">Sample notebook</text>
+<rect x="400" y="623" width="640" height="60" rx="0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="420" y="660" class="body">Sample cable</text>
+<rect x="400" y="683" width="640" height="60" rx="0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="420" y="720" class="body">Sample adapter</text>
+<text x="400" y="777" class="small" style="fill:#475569">Synthetic data only.</text>
+</g>
+<text x="1488" y="26" class="small">390 × 844 · proposed mobile</text>
+<g transform="translate(1488 42)">
+<rect x="0" y="0" width="390" height="844" rx="0" fill="#f5f7fb"/>
+<rect x="20" y="30" width="153" height="28" rx="14" fill="#e0e7ff"/>
+<text x="32" y="49" class="small" style="fill:#1e3a8a">SYNTHETIC DATA</text>
+<text x="20" y="106" class="title">Delivery Lab</text>
+<text x="20" y="141" class="body" style="fill:#475569">Create sample items to try</text>
+<text x="20" y="165" class="body" style="fill:#475569">the delivery journey.</text>
+<rect x="20" y="195" width="350" height="288" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="44" y="235" class="section">Create an item</text>
+<text x="44" y="274" class="label">Item name</text>
+<rect x="44" y="286" width="302" height="48" rx="6" fill="#ffffff" stroke="#64748b"/>
+<text x="56" y="316" class="body">Pilot notebook</text>
+<text x="44" y="358" class="small" style="fill:#475569">Use 1–80 characters. Surrounding</text>
+<text x="44" y="378" class="small" style="fill:#475569">whitespace is removed.</text>
+<rect x="44" y="403" width="302" height="48" rx="6" fill="#1d4ed8"/>
+<text x="170.0" y="433" class="label" style="fill:#ffffff">Create</text>
+<text x="20" y="545" class="section">Items</text>
+<text x="320" y="545" class="small" style="fill:#475569">3 items</text>
+<rect x="20" y="565" width="350" height="60" rx="0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="40" y="602" class="body">Sample notebook</text>
+<rect x="20" y="625" width="350" height="60" rx="0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="40" y="662" class="body">Sample cable</text>
+<rect x="20" y="685" width="350" height="60" rx="0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="40" y="722" class="body">Sample adapter</text>
+<text x="20" y="779" class="small" style="fill:#475569">Synthetic data only.</text>
+</g>
+<text x="24" y="972" class="small">BASE-1 · Static reference for human approval · State behaviour and accessibility requirements are in ui-reference.md.</text>
+</svg>

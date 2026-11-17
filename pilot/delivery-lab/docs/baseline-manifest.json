@@ -1,0 +1,204 @@
+{
+  "schema": "delivery-lab.static-baseline.v1",
+  "baseline": "BASE-1",
+  "created_date": "2026-11-17",
+  "status": "candidate-awaiting-independent-examination-and-native-approval",
+  "source_task": "LOGA-21",
+  "producer_agent_id": "07abe685-fbb1-4658-9dbe-187d9fe540aa",
+  "producer_run_id": "f3ef7ae2-ed2b-40ca-906e-afe9eed8c05b",
+  "candidate_identity": {
+    "repository": "https://github.com/logsoftgrup/delivery-framework.git",
+    "authorized_branch": "smoke/phase-b",
+    "commit_binding": "The enclosing immutable Git commit is recorded in the native publication packet. No self-referential commit field. Retrieve all paths at that exact commit.",
+    "manifest_identity": "Record this file Git blob and SHA-256 externally in the publication packet; this manifest does not hash itself.",
+    "base_commit": "a363fe1fd618ecaef1ec60b0188da2bb331f0ca7",
+    "writable_scope": "pilot/delivery-lab/docs/"
+  },
+  "inputs": {
+    "proposal_document_id": "55a2ac1f-bd24-4577-b674-bcb9bf96bcf2",
+    "proposal_revision_id": "9813aca4-ca72-48b1-952d-3c7e4730c226",
+    "proposal_acceptance_interaction": "29bf616d-859c-4a8a-aab7-5c00098b0a6c",
+    "hosting_interactions": [
+      "0ddd3115-00ca-4d3f-8518-def360567ea9",
+      "b564497b-933c-44af-aa66-dc76a8dce684"
+    ],
+    "assignment_plan_revision": "2e0f69e6-8ded-431f-a8cc-096503f322c9",
+    "framework_f2": {
+      "commit": "5c594e3087d68a8862072998478864f6ee18a253",
+      "integration": "Immutable reference only; no merge or framework modification.",
+      "files": [
+        {
+          "path": "framework/continuation.md",
+          "git_blob_sha1": "2bc57131e5e7d73a38aa0101fd71c4c98a15490a",
+          "sha256": "91dbc27559ce3ec605c101a17fde72f56bf65e55cf4bfcac83e1a13c2587e818"
+        },
+        {
+          "path": "framework/native-policies/README.md",
+          "git_blob_sha1": "a0eabd9ee1fa3ff611e2225be24a969513dc5b03",
+          "sha256": "ec1c506252b11682b2740efef94268bc96097a7038c4fd96f557b0ff9be27717"
+        },
+        {
+          "path": "framework/native-policies/non-author-review.template.json",
+          "git_blob_sha1": "e6389d0b74a6e2644b9eb597cabd7c356e76c19d",
+          "sha256": "830efaca105f9f6d572fb7bc7719c4eda410e24ce30aff7b6b13af8c72fa8103"
+        },
+        {
+          "path": "framework/templates/P.md",
+          "git_blob_sha1": "af6534bc76c3bff8aa367da3994dbc1f03d7994b",
+          "sha256": "dcdc41e8fd7eadb6c1cad2234c376e0d91dda311b680d93dd4c66444bd8756d3"
+        },
+        {
+          "path": "framework/templates/R.md",
+          "git_blob_sha1": "860f18f3b0b9f06dfa7ebea88c82dea74679521e",
+          "sha256": "318235a1b158b3e935e7a0b439b6cbd5fdad4909500971e8507e5499e1a892af"
+        },
+        {
+          "path": "framework/templates/V.md",
+          "git_blob_sha1": "91c1f051d1594a4209b9020495b2ad076a68af21",
+          "sha256": "7a15687febba9860194d45eb8ad0c73a02176a99dde42811425a73c7c1ae81aa"
+        }
+      ]
+    }
+  },
+  "criteria": [
+    "B1",
+    "B2",
+    "T1",
+    "T2",
+    "V1",
+    "A1",
+    "U1",
+    "O1",
+    "O2",
+    "L1"
+  ],
+  "files": [
+    {
+      "path": "pilot/delivery-lab/docs/acceptance.md",
+      "revision": "BASE-1",
+      "bytes": 10133,
+      "sha256": "0bbe96ac49b2e32be84c814e0d976bd754e42251bce48ebc957306fdd6af7bec",
+      "git_blob_sha1": "8318ec2fa44d318158a4c4ea87c07e2ce1ebbe8d"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/accessibility.md",
+      "revision": "BASE-1",
+      "bytes": 10768,
+      "sha256": "62a9199cbd064340809b04106b2fe04372fbda522d79cf016a59e26877aed9d9",
+      "git_blob_sha1": "dea31f50837318da903aed33964d2dfd273e7cfa"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/api.md",
+      "revision": "BASE-1",
+      "bytes": 10501,
+      "sha256": "afc99c599d133de1bb491e9bbb82b1da7e4d89f8a68c47f0e1b25402e097ad40",
+      "git_blob_sha1": "f7c3ea2acd8154ad6d5a8de5bbd6b0e9b9cef181"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/architecture.md",
+      "revision": "BASE-1",
+      "bytes": 8369,
+      "sha256": "804129eeaf71e60b497dbcb431901363f57c9ba9dceede7ae56e45ae5ccbe3b3",
+      "git_blob_sha1": "7975da8635ba0e2e04ee12677b545d85eca51694"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/runbook.md",
+      "revision": "BASE-1",
+      "bytes": 15763,
+      "sha256": "08538eb68fb16a98efbb6f73231d77ac96812f4f1fbe40a78d5ebcf6a572c10a",
+      "git_blob_sha1": "618b855068e5a3cebd553a8aa23816d7a12dd982"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/ui-reference.md",
+      "revision": "BASE-1",
+      "bytes": 6728,
+      "sha256": "d42c58e5e9bbfdcddb7c7b1bfc44996efe2c3c7a9fdd1497016c40e002a75000",
+      "git_blob_sha1": "d09e188f2e25b937057584d2cd1f284a377b4b07"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/ui-reference.svg",
+      "revision": "BASE-1",
+      "bytes": 4487,
+      "sha256": "393ff8dd173cdf557837f43794a488f463efa1ec5d1e84dbb993506bfed5982f",
+      "git_blob_sha1": "5adbd7b9ec6e058ec3c32e77710bdd110b799f1e"
+    }
+  ],
+  "coverage": {
+    "wcag_version": "2.2",
+    "wcag_dated_source": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+    "wcag_A_AA_rows": 55,
+    "visual_reference": "pilot/delivery-lab/docs/ui-reference.svg",
+    "reference_viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        1440,
+        900
+      ]
+    ]
+  },
+  "runtime_identities": {
+    "application_commit": null,
+    "scenario_revision": null,
+    "suite_commit": null,
+    "base_image_digest": null,
+    "application_image_digest": null,
+    "deployment_config_digest": null,
+    "ci_run": null,
+    "actual_service_url": null,
+    "reason": "Static baseline only; no application, suite, build, CI run or deployment exists in this assignment."
+  },
+  "open_selections": [
+    {
+      "id": "BUILD-INPUTS",
+      "owner": "Product Engineer in separately released application production",
+      "missing": [
+        "CPython patch and base image index/platform digest",
+        "FastAPI and Uvicorn exact versions",
+        "complete transitive hash lock and installer/resolver versions",
+        "bundled SQLite version",
+        "build/Compose tool identities"
+      ],
+      "blocks": "T2 build/package and runtime readiness; details in architecture.md"
+    },
+    {
+      "id": "CI",
+      "owner": "Bogdan through CEO coordination; Engineer supplies packet",
+      "missing": [
+        "enablement",
+        "runner capacity",
+        "authorized workflow publication",
+        "pinned action commit identities",
+        "artifact destination/retention/retrieval"
+      ],
+      "blocks": "CI/runtime release readiness; details in runbook.md"
+    },
+    {
+      "id": "OPS",
+      "owner": "Engineer operator with independent Assurance verification",
+      "missing": [
+        "host-namespace free ports",
+        "persistent volume permissions/capacity and backup destination",
+        "actual agent/human service routes",
+        "external access exclusion",
+        "session-end persistence",
+        "verified known-good target and recovery results"
+      ],
+      "blocks": "O1/O2 and human runtime promotion; details in runbook.md"
+    }
+  ],
+  "examinations": {
+    "BASE.R": "LOGA-25",
+    "BASE.V": "LOGA-26",
+    "owner_agent_id": "ce8e0a2f-a532-45cb-abeb-a3937e9be71e",
+    "runtime_inputs_applicability": "N/A for these static examinations; do not infer runtime PASS"
+  },
+  "native_acceptance": {
+    "reviewer_agent_id": "ce8e0a2f-a532-45cb-abeb-a3937e9be71e",
+    "human_approver_id": "aF9BHPX4C09h2VUawmZCQ2fRaahri14d",
+    "original_producer_return_id": "07abe685-fbb1-4658-9dbe-187d9fe540aa",
+    "decision": "pending; producer does not accept own output"
+  }
+}
