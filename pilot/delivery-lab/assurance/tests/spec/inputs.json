@@ -1,0 +1,32 @@
+{
+  "base": {
+    "commit": "a76f458655c9bd2a8ef95562651e0c9155f6a878",
+    "files": {
+      "acceptance.md": "90a942e8e10f2d564c3a6ec7e85a81c6ae4f4b2f49513393a4ac935a5be66b78",
+      "accessibility.md": "62a9199cbd064340809b04106b2fe04372fbda522d79cf016a59e26877aed9d9",
+      "api.md": "3b36352ff7c7e858210565281947379e4273a756f8d9bc892d61572d5b0a2bb5",
+      "architecture.md": "57ff6307532dd55975f8854012a214dbe6f6e3bb3a8732bce2971b1ac9303728",
+      "baseline-manifest.json": "4998e30cef6a3a57d7e71b8221670ff095ca999bdc66b28c29ab513f7fc83f28",
+      "runbook.md": "08538eb68fb16a98efbb6f73231d77ac96812f4f1fbe40a78d5ebcf6a572c10a",
+      "ui-reference.md": "d42c58e5e9bbfdcddb7c7b1bfc44996efe2c3c7a9fdd1497016c40e002a75000",
+      "ui-reference.svg": "393ff8dd173cdf557837f43794a488f463efa1ec5d1e84dbb993506bfed5982f"
+    }
+  },
+  "ts": {
+    "commit": "de46dadeb45c76280b0a99630303fb7666798789",
+    "files": {
+      "README.md": "462329473d3692e766fcdbf765a579673cf3c50f43988c5394da08ea1b9b6ea1",
+      "accessibility.md": "e9b10a13c4ce02af510a0044089c3ebdec6e7d947fe47f7c26498d9343a70a7c",
+      "api.md": "8f12e4443ed47753dcdd4c7a2d51db2b1ade94a29a29c06d7bf1991a8e96a2f1",
+      "browser-input.md": "e9f63e5457a1e098f15ea48dfbef512cefd283d9ab73270d9bf69e9daf754471",
+      "browser-manual.md": "596ab96211976faa449c48113f2367787b74c5809ce61b636c1db6f15539c41f",
+      "coverage.md": "6b771a384a6d4d7da8e02f777065ea58ab3a96c41af82f54c5ed5191d03dc7fc",
+      "fixtures.json": "fdbf49f59cf803d7646a63729a9a98eb2b8e85360aded1708348247018afc8f9",
+      "harness.md": "c5a57179df0de572f2299399754397bff157af3cb428bd59b452a7fa8246b3af",
+      "impact-ts-2.md": "7058b11c7012c2f13de2ebd5be8c20dbb9c9d6b6d22604ea80a5f6d14be092a2",
+      "impact-ts-3.md": "6621a12856753e337c48efcf5e8c47e845c04ba746b76e9adcd20ee6bda18f0f",
+      "manifest.json": "9c989d0a3ce05dc2574ff0c76673b6d21e45c98a07fcfaffe02357342704a7e5",
+      "operations-lifecycle.md": "b69585d391165317b26155b1b5a6ecbcb34ee130502260c8e579e02fa5c0619f"
+    }
+  }
+}

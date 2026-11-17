@@ -1,0 +1,802 @@
+{
+  "task": null,
+  "actor": null,
+  "run": null,
+  "session": null,
+  "utc": null,
+  "native_stage": null,
+  "current_participant": null,
+  "original_producer": null,
+  "return_assignee": null,
+  "app_sha": null,
+  "scenario_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+  "suite_sha": null,
+  "image_manifest_digest": null,
+  "image_config_digest": null,
+  "archive_sha256": null,
+  "configuration_sha256": null,
+  "actual_route": null,
+  "fixture_id": null,
+  "before_snapshot_sha256": null,
+  "after_snapshot_sha256": null,
+  "browser_os_at_versions": null,
+  "observations": [],
+  "limitations": [],
+  "next_responsible_actor": null,
+  "manual_scenarios": [
+    {
+      "id": "API-18",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-04",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-05",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-06",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-07",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "AX-08",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "DATA-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "DATA-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "DATA-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "DATA-04",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "DATA-05",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-04",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-05",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-06",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-07",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-08",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-09",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-10",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-11",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HAR-12",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HUM-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "HUM-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "LIFE-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "LIFE-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "LIFE-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "LIFE-04",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "LIFE-05",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-04",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-05",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-06",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-07",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-08",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "OPS-09",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "PKG-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "PKG-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "PKG-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "SEC-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "SEC-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "SEC-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-04",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-05",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-06",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-07",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-08",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-09",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-10",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-11",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "UI-12",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "VIS-01",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "VIS-02",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    },
+    {
+      "id": "VIS-03",
+      "status": "NOT_RUN",
+      "findings": [],
+      "artifact_refs": []
+    }
+  ],
+  "wcag_criteria": [
+    {
+      "id": "1.1.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.2.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.2.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.2.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.2.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.2.5",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.3.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.3.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.3.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.3.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.3.5",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.5",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.10",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.11",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.12",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "1.4.13",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.1.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.1.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.1.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.2.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.2.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.3.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.5",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.6",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.7",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.4.11",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.5.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.5.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.5.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.5.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.5.7",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "2.5.8",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.1.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.1.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.2.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.2.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.2.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.2.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.2.6",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.3.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.3.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.3.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.3.4",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.3.7",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "3.3.8",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "4.1.1",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "4.1.2",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    },
+    {
+      "id": "4.1.3",
+      "applicability": "NOT_ASSESSED",
+      "rationale": null,
+      "result": "NOT_RUN",
+      "artifact_refs": []
+    }
+  ],
+  "human_native_interaction": null,
+  "verdict": "NOT_RUN"
+}

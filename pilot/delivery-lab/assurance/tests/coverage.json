@@ -1,0 +1,4912 @@
+{
+  "status": "DRAFT_NOT_RELEASED",
+  "scenarios": [
+    {
+      "scenario": "API-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-3.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-01/trim"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-01/ascii-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-01/ascii-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-02/astral-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-02/astral-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-01/ascii-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-03/combining-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-03/precomposed-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0009-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0009-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000A-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000A-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000B-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000B-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000C-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000C-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000D-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000D-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0020-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0020-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0085-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0085-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-00A0-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-00A0-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-1680-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-1680-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2000-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2000-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2001-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2001-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2002-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2002-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2003-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2003-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2004-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2004-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2005-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2005-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2006-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2006-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2007-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2007-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2008-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2008-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2009-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2009-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-200A-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-200A-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2028-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2028-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2029-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2029-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-202F-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-202F-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-205F-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-205F-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-3000-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-3000-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-200B/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-only-200B/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-FEFF/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-only-FEFF/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-001C/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-0000/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/interior/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/nonlatin/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UI-10/markup/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/case/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-08/mixed-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/interior-cr/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/interior-crlf/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/missing"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-0"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-1"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-2"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-3"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-4"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-5"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-03/type-6"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "browser-manual.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-01/ascii-81/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-02/astral-81/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-03/combining-81/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/API-05/c0-sentinel/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/API-04/empty/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-08/mixed-81/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "impact-ts-3.md",
+        "impact-ts-2.md",
+        "harness.md",
+        "coverage.md",
+        "browser-manual.md",
+        "api.md",
+        "README.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/c0-sentinel"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-0009-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-000A-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-000B-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-000C-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-000D-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-0020-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-0085-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-00A0-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-1680-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2000-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2001-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2002-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2003-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2004-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2005-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2006-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2007-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2008-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2009-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-200A-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2028-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-2029-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-202F-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-205F-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/trim-3000-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-05/API-05/combined-trim-only/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/API-05/c0-sentinel/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-06",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-06/object-0"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-06/object-1"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-06/object-2"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-06/object-3"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-06/object-4"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-07",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-0"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-1"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-2"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-3"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-08",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/empty"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/truncated"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/trailing-comma"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/duplicate-keys"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/nan"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/infinity"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/negative-infinity"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/lone-high"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/lone-low"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/mixed-lone"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/paired"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/invalid-utf8"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-09",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/empty"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/truncated"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/trailing-comma"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/duplicate-keys"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/nan"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/infinity"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/negative-infinity"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/lone-high"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/lone-low"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/mixed-lone"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/paired"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/invalid-utf8"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-09/API-13/surrogate-before-length"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-10",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-10/media-None"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-10/media-text/plain"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-10/media-application/x-www-form-urlencoded"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-10/media-application/xml"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-10/media-application/json"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-10/media-application/json;charset=utf-8"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-11",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/ascii-exact-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/ascii-over-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/multibyte-over-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/malformed-exact-limit"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-12",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/ascii-exact-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/ascii-over-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/multibyte-over-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-11/API-12/malformed-exact-limit"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-12/size-before-media"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-12/media-before-json"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-13",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-0"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-1"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-2"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-07/API-13/extra-3"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-13/duplicate-before-extra"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-09/API-13/surrogate-before-length"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-14",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API14_DATA01_duplicates"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-15",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-3.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API15_readonly"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-16",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-3.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API16_storage"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-17",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API17_internal"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "API-18",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API18_public_schema"
+        }
+      ],
+      "manual": [
+        "Published complete OpenAPI schema/error/body and secret/path leakage examination; api.md API-18"
+      ]
+    },
+    {
+      "scenario": "AX-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "state captures + TC-1-dom-audit + VIS02 long states / 320 CSS px and spacing"
+        }
+      ],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "browser-manual.md",
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "state captures + TC-1-dom-audit + VIS02 long states / 320 CSS px and spacing"
+        }
+      ],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-06",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-07",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "state captures + TC-1-dom-audit + VIS02 long states / 320 CSS px and spacing"
+        }
+      ],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "AX-08",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/accessibility.md"
+      ]
+    },
+    {
+      "scenario": "DATA-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API14_DATA01_duplicates + all successful POST item assertions"
+        }
+      ],
+      "manual": [
+        "DATA-01 server clock window if stable; DATA-03/04 actual accepted adapter + operator startup/restart proof; no logical-fixture durability claim."
+      ]
+    },
+    {
+      "scenario": "DATA-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_DATA02_equal_time"
+        }
+      ],
+      "manual": [
+        "DATA-01 server clock window if stable; DATA-03/04 actual accepted adapter + operator startup/restart proof; no logical-fixture durability claim."
+      ]
+    },
+    {
+      "scenario": "DATA-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_DATA03_seed"
+        }
+      ],
+      "manual": [
+        "DATA-01 server clock window if stable; DATA-03/04 actual accepted adapter + operator startup/restart proof; no logical-fixture durability claim."
+      ]
+    },
+    {
+      "scenario": "DATA-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_DATA04_acknowledged_restart"
+        }
+      ],
+      "manual": [
+        "DATA-01 server clock window if stable; DATA-03/04 actual accepted adapter + operator startup/restart proof; no logical-fixture durability claim."
+      ]
+    },
+    {
+      "scenario": "DATA-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_DATA05_probes"
+        }
+      ],
+      "manual": [
+        "DATA-01 server clock window if stable; DATA-03/04 actual accepted adapter + operator startup/restart proof; no logical-fixture durability claim."
+      ]
+    },
+    {
+      "scenario": "HAR-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-01"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-02"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-2.md",
+        "harness.md",
+        "browser-input.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-03"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-04"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-05"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-06",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "browser-manual.md",
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-06"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-07",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/run.py",
+          "test": "HAR-07"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-08",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "harness.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/vectors.py",
+          "test": "HAR-08"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-09",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/vectors.py",
+          "test": "HAR-09"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-10",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/vectors.py",
+          "test": "HAR-10"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-11",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/vectors.py",
+          "test": "HAR-11"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HAR-12",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "qualification/vectors.py",
+          "test": "HAR-12"
+        }
+      ],
+      "manual": [
+        "manual/harness.md; HAR-06 manual contrast/focus and HAR-12 actual evidence provenance cannot be auto-qualified"
+      ]
+    },
+    {
+      "scenario": "HUM-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md",
+        "accessibility.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/browser-manual.md; authorized human only"
+      ]
+    },
+    {
+      "scenario": "HUM-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/browser-manual.md; authorized human only"
+      ]
+    },
+    {
+      "scenario": "LIFE-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "LIFE-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "LIFE-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "LIFE-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "LIFE-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "support/safety.py",
+          "test": "validate_packet + DATA05 probes and version"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-06",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_evidence.py",
+          "test": "test_OPS06_OPS08_OPS09_backup_and_recovery"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-07",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "README.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-08",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_evidence.py",
+          "test": "test_OPS06_OPS08_OPS09_backup_and_recovery"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "OPS-09",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_evidence.py",
+          "test": "test_OPS06_OPS08_OPS09_backup_and_recovery"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "PKG-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "support/safety.py",
+          "test": "exact local artifact checksums + input identities; actual clean build/CI retrieval remains operator/examination procedure"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "PKG-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md",
+        "coverage.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_evidence.py",
+          "test": "test_PKG02_metadata_confinement"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "PKG-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "operations-lifecycle.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "support/safety.py",
+          "test": "exact local artifact checksums + input identities; actual clean build/CI retrieval remains operator/examination procedure"
+        }
+      ],
+      "manual": [
+        "manual/operations-lifecycle.md; all operator/human and independent provenance observations remain required"
+      ]
+    },
+    {
+      "scenario": "SEC-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-3.md",
+        "impact-ts-2.md",
+        "coverage.md",
+        "api.md",
+        "README.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O01/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O03/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O10/host-case/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O10/origin-case/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O11/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O01/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O03/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O11/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O01/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O03/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O10/host-case/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O10/origin-case/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O11/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O01/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O03/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O04/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O05/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O06/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O07/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O09/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O08/duplicate-1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O11/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O12/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-01/O02/probe-1/18080/127.0.0.1"
+        }
+      ],
+      "manual": [
+        "Static admission-before-parser/probe/route checks; actual browser-set/cross-origin request observations; parser boundary and HEAD applicability; actual QA alias prerequisites and no blanket health bypass. See exact TS api.md."
+      ]
+    },
+    {
+      "scenario": "SEC-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/5/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/5/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/6/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H09/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H08/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/allowed/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/denied/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/5/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/5/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/6/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H09/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H08/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/allowed/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/denied/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/5/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/5/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/6/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H09/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H08/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/allowed/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/denied/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H01/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H02/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H03/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H04/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H05/5/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/5/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H07/6/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H09/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H06/duplicate-1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H08/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/allowed/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-02/H13/denied/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC02_H10_H11_H12_verified_alias"
+        }
+      ],
+      "manual": [
+        "Static admission-before-parser/probe/route checks; actual browser-set/cross-origin request observations; parser boundary and HEAD applicability; actual QA alias prerequisites and no blanket health bypass. See exact TS api.md."
+      ]
+    },
+    {
+      "scenario": "SEC-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/2/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/3/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/4/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/5/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/5/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/5/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/5/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/6/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/6/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/6/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/6/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/7/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/7/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/7/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/7/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/0/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/1/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/boundary/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/missing/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/boundary/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/duplicate/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P07/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/missing/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/type/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/length/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/missing/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/type/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/unicode/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/length/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P10/18081/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/2/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/3/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/4/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/5/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/5/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/5/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/5/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/6/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/6/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/6/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/6/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/7/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/7/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/7/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/7/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/0/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/1/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/boundary/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/missing/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/boundary/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/duplicate/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P07/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/missing/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/type/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/length/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/missing/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/type/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/unicode/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/length/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P10/18081/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/2/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/3/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/4/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/5/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/5/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/5/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/5/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/6/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/6/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/6/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/6/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/7/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/7/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/7/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/7/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/0/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/1/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/boundary/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/missing/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/boundary/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/duplicate/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P07/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/missing/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/type/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/length/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/missing/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/type/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/unicode/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/length/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P10/18080/localhost"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/2/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/3/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/4/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/5/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/5/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/5/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/5/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/6/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/6/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/6/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/6/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P01/7/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/matching/7/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P02/absent/7/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P03/7/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/0/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P04/1/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/boundary/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P05/missing/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/boundary/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P06/duplicate/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P07/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/missing/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/type/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P08/length/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/missing/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/type/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/unicode/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P09/length/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC_matrix",
+          "parameter": "SEC-03/P10/18080/127.0.0.1"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC03_P11_P12_fault_priority"
+        },
+        {
+          "file": "cases/test_security.py",
+          "test": "test_SEC03_P13_P14_P15_route_matrix"
+        }
+      ],
+      "manual": [
+        "Static admission-before-parser/probe/route checks; actual browser-set/cross-origin request observations; parser boundary and HEAD applicability; actual QA alias prerequisites and no blanket health bypass. See exact TS api.md."
+      ]
+    },
+    {
+      "scenario": "UI-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI01_UI04_VIS01_pending_journey"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-2.md",
+        "coverage.md",
+        "browser-manual.md",
+        "browser-input.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI02_UI03_entry"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ],
+      "parameters": [
+        "ascii-81/browser-entry",
+        "astral-81/browser-entry",
+        "combining-81/browser-entry",
+        "trim-0009-only/browser-entry",
+        "trim-000A-only/browser-entry",
+        "trim-000B-only/browser-entry",
+        "trim-000C-only/browser-entry",
+        "trim-000D-only/browser-entry",
+        "trim-0020-only/browser-entry",
+        "trim-0085-only/browser-entry",
+        "trim-00A0-only/browser-entry",
+        "trim-1680-only/browser-entry",
+        "trim-2000-only/browser-entry",
+        "trim-2001-only/browser-entry",
+        "trim-2002-only/browser-entry",
+        "trim-2003-only/browser-entry",
+        "trim-2004-only/browser-entry",
+        "trim-2005-only/browser-entry",
+        "trim-2006-only/browser-entry",
+        "trim-2007-only/browser-entry",
+        "trim-2008-only/browser-entry",
+        "trim-2009-only/browser-entry",
+        "trim-200A-only/browser-entry",
+        "trim-2028-only/browser-entry",
+        "trim-2029-only/browser-entry",
+        "trim-202F-only/browser-entry",
+        "trim-205F-only/browser-entry",
+        "trim-3000-only/browser-entry",
+        "combined-trim-only/browser-entry",
+        "c0-sentinel/browser-entry",
+        "empty/browser-entry",
+        "mixed-81/browser-entry"
+      ]
+    },
+    {
+      "scenario": "UI-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md",
+        "browser-input.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI02_UI03_entry"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ],
+      "parameters": [
+        "ascii-1/browser-entry",
+        "ascii-80/browser-entry",
+        "ascii-81/browser-entry",
+        "astral-1/browser-entry",
+        "astral-80/browser-entry",
+        "astral-81/browser-entry",
+        "ascii-padded-80/browser-entry",
+        "combining-80/browser-entry",
+        "combining-81/browser-entry",
+        "precomposed-80/browser-entry",
+        "trim-0009-padded-1/browser-entry",
+        "trim-0009-padded-80/browser-entry",
+        "trim-000A-padded-1/browser-entry",
+        "trim-000A-padded-80/browser-entry",
+        "trim-000B-padded-1/browser-entry",
+        "trim-000B-padded-80/browser-entry",
+        "trim-000C-padded-1/browser-entry",
+        "trim-000C-padded-80/browser-entry",
+        "trim-000D-padded-1/browser-entry",
+        "trim-000D-padded-80/browser-entry",
+        "trim-0020-padded-1/browser-entry",
+        "trim-0020-padded-80/browser-entry",
+        "trim-0085-padded-1/browser-entry",
+        "trim-0085-padded-80/browser-entry",
+        "trim-00A0-padded-1/browser-entry",
+        "trim-00A0-padded-80/browser-entry",
+        "trim-1680-padded-1/browser-entry",
+        "trim-1680-padded-80/browser-entry",
+        "trim-2000-padded-1/browser-entry",
+        "trim-2000-padded-80/browser-entry",
+        "trim-2001-padded-1/browser-entry",
+        "trim-2001-padded-80/browser-entry",
+        "trim-2002-padded-1/browser-entry",
+        "trim-2002-padded-80/browser-entry",
+        "trim-2003-padded-1/browser-entry",
+        "trim-2003-padded-80/browser-entry",
+        "trim-2004-padded-1/browser-entry",
+        "trim-2004-padded-80/browser-entry",
+        "trim-2005-padded-1/browser-entry",
+        "trim-2005-padded-80/browser-entry",
+        "trim-2006-padded-1/browser-entry",
+        "trim-2006-padded-80/browser-entry",
+        "trim-2007-padded-1/browser-entry",
+        "trim-2007-padded-80/browser-entry",
+        "trim-2008-padded-1/browser-entry",
+        "trim-2008-padded-80/browser-entry",
+        "trim-2009-padded-1/browser-entry",
+        "trim-2009-padded-80/browser-entry",
+        "trim-200A-padded-1/browser-entry",
+        "trim-200A-padded-80/browser-entry",
+        "trim-2028-padded-1/browser-entry",
+        "trim-2028-padded-80/browser-entry",
+        "trim-2029-padded-1/browser-entry",
+        "trim-2029-padded-80/browser-entry",
+        "trim-202F-padded-1/browser-entry",
+        "trim-202F-padded-80/browser-entry",
+        "trim-205F-padded-1/browser-entry",
+        "trim-205F-padded-80/browser-entry",
+        "trim-3000-padded-1/browser-entry",
+        "trim-3000-padded-80/browser-entry",
+        "preserve-200B/browser-entry",
+        "preserve-only-200B/browser-entry",
+        "preserve-FEFF/browser-entry",
+        "preserve-only-FEFF/browser-entry",
+        "preserve-001C/browser-entry",
+        "preserve-0000/browser-entry",
+        "interior/browser-entry",
+        "nonlatin/browser-entry",
+        "markup/browser-entry",
+        "case/browser-entry",
+        "mixed-80/browser-entry",
+        "mixed-81/browser-entry",
+        "interior-cr/browser-entry",
+        "interior-crlf/browser-entry"
+      ]
+    },
+    {
+      "scenario": "UI-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI01_UI04_VIS01_pending_journey"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI05_confirmed_refresh_failure"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-06",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI06_UI12_definite_rejection"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-07",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "harness.md",
+        "browser-manual.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI07_UI08_UI09_uncertainty"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-08",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "browser-manual.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI07_UI08_UI09_uncertainty"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-09",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI07_UI08_UI09_uncertainty"
+        },
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI09_initial_failure_and_reload_guard"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-10",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md",
+        "browser-input.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI10_API_created_display"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-11",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-2.md",
+        "coverage.md",
+        "browser-manual.md",
+        "README.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI11_empty_plural_VIS02_long"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UI-12",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-2.md",
+        "coverage.md",
+        "browser-manual.md",
+        "browser-input.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "test_UI06_UI12_definite_rejection"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md: assess visible meaning, keyboard/focus and actual interception/tuple causality; controlled browser-state setup stays separate from natural entry."
+      ]
+    },
+    {
+      "scenario": "UNI-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "impact-ts-2.md",
+        "coverage.md",
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-01/ascii-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-01/ascii-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-01/ascii-81/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-01/ascii-padded-80/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-02/astral-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-02/astral-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-02/astral-81/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-03/combining-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-03/combining-81/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-03/precomposed-80/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-04",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0009-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0009-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000A-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000A-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000B-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000B-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000C-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000C-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000D-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-000D-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0020-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0020-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0085-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-0085-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-00A0-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-00A0-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-1680-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-1680-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2000-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2000-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2001-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2001-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2002-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2002-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2003-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2003-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2004-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2004-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2005-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2005-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2006-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2006-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2007-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2007-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2008-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2008-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2009-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2009-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-200A-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-200A-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2028-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2028-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2029-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-2029-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-202F-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-202F-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-205F-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-205F-padded-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-3000-padded-1/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-04/trim-3000-padded-80/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-05",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-200B/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-only-200B/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-FEFF/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-only-FEFF/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-001C/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-05/preserve-0000/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-06",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/interior/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/nonlatin/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/case/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/interior-cr/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-06/interior-crlf/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-07",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/lone-high"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/lone-low"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-08/API-09/mixed-lone"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-09/API-13/surrogate-before-length"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "UNI-08",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "api.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-02/UNI-08/mixed-80/api"
+        },
+        {
+          "file": "cases/test_api.py",
+          "test": "test_API_UNI",
+          "parameter": "API-04/UNI-08/mixed-81/api"
+        }
+      ],
+      "manual": []
+    },
+    {
+      "scenario": "VIS-01",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "state captures + TC-1-dom-audit + VIS02 long states / 320 CSS px and spacing"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md"
+      ]
+    },
+    {
+      "scenario": "VIS-02",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "coverage.md",
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [
+        {
+          "file": "cases/test_browser.py",
+          "test": "state captures + TC-1-dom-audit + VIS02 long states / 320 CSS px and spacing"
+        }
+      ],
+      "manual": [
+        "manual/browser-manual.md"
+      ]
+    },
+    {
+      "scenario": "VIS-03",
+      "accepted_sha": "de46dadeb45c76280b0a99630303fb7666798789",
+      "source_files": [
+        "browser-manual.md"
+      ],
+      "status": "NOT_RUN",
+      "automated": [],
+      "manual": [
+        "manual/browser-manual.md"
+      ]
+    }
+  ],
+  "limits": [
+    "Full pinned lock/Chromium unavailable",
+    "No pytest collection/browser execution yet",
+    "Runtime QA adapter not supplied",
+    "All manual/H obligations NOT_RUN"
+  ]
+}
