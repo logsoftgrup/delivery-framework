@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "plain": {"format": "%(asctime)s %(levelname)s %(message)s"}
+  },
+  "handlers": {
+    "console": {"class": "logging.StreamHandler", "formatter": "plain", "stream": "ext://sys.stderr"}
+  },
+  "loggers": {
+    "delivery_lab": {"handlers": ["console"], "level": "INFO", "propagate": false},
+    "uvicorn": {"handlers": ["console"], "level": "INFO", "propagate": false},
+    "uvicorn.error": {"level": "INFO"},
+    "uvicorn.access": {"handlers": [], "level": "CRITICAL", "propagate": false}
+  },
+  "root": {"handlers": ["console"], "level": "WARNING"}
+}

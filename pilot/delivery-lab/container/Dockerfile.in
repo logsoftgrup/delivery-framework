@@ -1,0 +1,27 @@
+# Non-buildable preparation template. Resolve @@BASE_PLATFORM_IMAGE@@ to the
+# verified python@sha256:<linux-amd64-manifest>, then independently review.
+FROM @@BASE_PLATFORM_IMAGE@@
+ARG SOURCE_COMMIT
+ARG BUILD_ID
+LABEL com.logsoftgrup.pilot="delivery-lab" \
+      org.opencontainers.image.revision="${SOURCE_COMMIT}" \
+      org.opencontainers.image.title="Delivery Lab"
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+WORKDIR /app
+COPY pilot/delivery-lab/app/requirements.lock /build/requirements.lock
+COPY pilot/delivery-lab/container/wheels/ /build/wheels/
+RUN python -m pip install --no-cache-dir --no-index --find-links=/build/wheels \
+    --require-hashes --only-binary=:all: -r /build/requirements.lock \
+    && python -m pip check \
+    && rm -rf /build
+COPY pilot/delivery-lab/app/ /app/
+RUN python -c 'import json,os,re; s=os.environ["SOURCE_COMMIT"]; b=os.environ["BUILD_ID"]; assert re.fullmatch("[0-9a-f]{40}",s) and b; open("/app/build_identity.json","w").write(json.dumps(dict(source_commit=s,build_id=b,contract_version="1",schema_version=1)))' \
+    && groupadd --gid 10001 deliverylab \
+    && useradd --uid 10001 --gid 10001 --no-create-home --shell /usr/sbin/nologin deliverylab \
+    && mkdir -p /data \
+    && chown 10001:10001 /data
+USER 10001:10001
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--no-proxy-headers", "--no-access-log", "--log-config", "/app/logging.json"]

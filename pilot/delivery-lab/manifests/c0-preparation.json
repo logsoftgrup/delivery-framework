@@ -1,0 +1,118 @@
+{
+  "format": "delivery-lab.candidate-preparation.v1",
+  "candidate": "C0",
+  "release_status": "BLOCKED_PREPARATION_NOT_RELEASED",
+  "source_commit_binding": "External publication receipt binds this manifest and paths to the immutable commit; no self-reference.",
+  "authorized_branch": "smoke/phase-b",
+  "producer": "07abe685-fbb1-4658-9dbe-187d9fe540aa",
+  "run_id": "d44232c0-cf26-4453-ae5c-64ce727ca27b",
+  "accepted_inputs": {
+    "BASE-3": "a76f458655c9bd2a8ef95562651e0c9155f6a878",
+    "TS-3": "de46dadeb45c76280b0a99630303fb7666798789",
+    "release_document_revision": "f871d682-8c04-4cd6-b6cd-b8f70a6c3e56"
+  },
+  "intended_defect": {
+    "id": "C0-API-05",
+    "path": "pilot/delivery-lab/app/core.py",
+    "marker": "whitespace_only_c0",
+    "behavior": "Nonempty input containing only the exact trim set is accepted by API and inserted with an empty stored name.",
+    "expected_contract": "422 validation_error/name_length and no insertion. Schema, UI and independent oracle remain unchanged.",
+    "authorized_scope": "QA C0 only; preserve unchanged candidate for independent B2 FAIL and native producer return."
+  },
+  "files": [
+    {
+      "path": "pilot/delivery-lab/app/core.py",
+      "bytes": 9866,
+      "sha256": "175a9a271b7194acfda15a2e192d3d4e18cf047215b2b78c4ee61c1af3b06fb5"
+    },
+    {
+      "path": "pilot/delivery-lab/app/logging.json",
+      "bytes": 627,
+      "sha256": "4b3ed270b34435f90af4f668a5d557a9bd3c655ccabf66fed4679af9b23f2d81"
+    },
+    {
+      "path": "pilot/delivery-lab/app/main.py",
+      "bytes": 7119,
+      "sha256": "8cebe7830428a2fbb65fca9c4b95654e00f63964313273061f17050f2861f291"
+    },
+    {
+      "path": "pilot/delivery-lab/app/requirements.in",
+      "bytes": 243,
+      "sha256": "a1028d34237ff6eeb17688944ef2d9ea2ef3bd390b7ace473c68c36d114490f5"
+    },
+    {
+      "path": "pilot/delivery-lab/app/schema.py",
+      "bytes": 3674,
+      "sha256": "b60b65576bc4e2b252e822c7842fd0d5a3057dee09b2c5363ce80a369904ccf5"
+    },
+    {
+      "path": "pilot/delivery-lab/app/static/app.js",
+      "bytes": 6302,
+      "sha256": "51b5fd9df8344c1e85a18942dae7d09e9bc4924426c31ab7c1b01550af8164ec"
+    },
+    {
+      "path": "pilot/delivery-lab/app/static/index.html",
+      "bytes": 1713,
+      "sha256": "56f79f7056b983cd7ae450b08355310e89ff56ba5219f529a4ffebef6e0c21e5"
+    },
+    {
+      "path": "pilot/delivery-lab/app/static/style.css",
+      "bytes": 2516,
+      "sha256": "8885e61aa42417c345119ef88e70fcdfb10990f614839753fe7c82ff31cc130c"
+    },
+    {
+      "path": "pilot/delivery-lab/container/Dockerfile.in",
+      "bytes": 1509,
+      "sha256": "5d9bd0c89e2ae2666ada8c3a6c130657cdefc6ae5708f4c1842d9361ff99c510"
+    },
+    {
+      "path": "pilot/delivery-lab/container/compose.qa.yml",
+      "bytes": 1474,
+      "sha256": "19d08de5be1517ec3aaed88599a81f8f8d69962906f3fa37532b5eb6fd49b67d"
+    },
+    {
+      "path": "pilot/delivery-lab/container/compose.review.yml",
+      "bytes": 1630,
+      "sha256": "cc77f28f8a31911a3597013e69095a37a709300786a8c264505084f3202db8d1"
+    },
+    {
+      "path": "pilot/delivery-lab/docs/app-production.md",
+      "bytes": 7561,
+      "sha256": "71028ccdd95c1f8eea59d598ce25a091923813d4faa0be0d385f777c7366b6eb"
+    }
+  ],
+  "build": {
+    "base_index_digest": null,
+    "base_platform_manifest_digest": null,
+    "dependency_lock": null,
+    "image_manifest_digest": null,
+    "image_config_digest": null,
+    "archive_sha256": null,
+    "reason": "Configured network denies Docker Hub/PyPI; no cached Python/pilot image; artifact supply requested via CEO."
+  },
+  "runtime": {
+    "deployed": false,
+    "qa_route": null,
+    "review_route": null,
+    "fixture_snapshot": null,
+    "configuration": "Static Compose preparation only; no rendered deployment identity."
+  },
+  "examinations": {
+    "APP.R": "Not released; complete C0 packet required.",
+    "APP.V": "Not released; complete C0, accepted TEST.TC and actual route required."
+  },
+  "producer_checks": {
+    "passed": 48,
+    "total": 48,
+    "scope": "Stdlib core/storage, Python/JS syntax, Compose syntax; not acceptance.",
+    "evidence": "LOGA-24 publication/preparation documents"
+  },
+  "remaining": [
+    "Resolve and verify exact dependencies/base image and supply artifacts",
+    "Generate final hashed lock and digest-pinned Dockerfile; clean build from published SHA",
+    "Capture image manifest/config/archive and runtime configuration identities",
+    "Verify host port/route and deploy only to isolated QA",
+    "Accepted TEST.TC exact SHA and reviewed workflow invocation",
+    "Independent C0 examinations before native submission"
+  ]
+}

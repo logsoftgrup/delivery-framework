@@ -1,0 +1,5 @@
+# Resolution request only. This is NOT an installable lock or a build input.
+# Resolve on the selected CPython 3.13/linux-amd64 base, then publish every
+# direct/transitive exact version and wheel SHA-256 in requirements.lock.
+fastapi
+uvicorn

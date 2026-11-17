@@ -1,0 +1,51 @@
+# Eligible only after independent C1 qualification and deliberate promotion.
+# C0 must never be used with this configuration.
+name: delivery-lab-review
+services:
+  app:
+    image: ${DELIVERY_LAB_IMAGE:?Set the independently passing immutable C1 image}
+    pull_policy: never
+    container_name: delivery-lab-review-app
+    labels:
+      com.logsoftgrup.pilot: delivery-lab
+      com.logsoftgrup.environment: review
+      org.opencontainers.image.revision: ${DELIVERY_LAB_SOURCE_COMMIT:?Set the verified source SHA}
+    user: "10001:10001"
+    read_only: true
+    init: true
+    restart: unless-stopped
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 256m
+    cpus: 1
+    environment:
+      DELIVERY_LAB_ENV: review
+      DELIVERY_LAB_DB_PATH: /data/items.sqlite3
+      DELIVERY_LAB_PORT: "8000"
+    ports:
+      - "127.0.0.1:18080:8000"
+    volumes:
+      - data:/data
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16777216,mode=1777
+    networks: [isolated]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; r=urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8000/readyz',headers={'Host':'127.0.0.1:18080'}),timeout=6); assert r.status == 200"]
+      interval: 30s
+      timeout: 7s
+      start_period: 10s
+      retries: 3
+networks:
+  isolated:
+    name: delivery-lab-review-net
+    internal: true
+    labels:
+      com.logsoftgrup.pilot: delivery-lab
+      com.logsoftgrup.environment: review
+volumes:
+  data:
+    name: delivery-lab-review-data
+    labels:
+      com.logsoftgrup.pilot: delivery-lab
+      com.logsoftgrup.environment: review

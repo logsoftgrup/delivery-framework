@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery Lab</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">Synthetic data</span>
+      <h1>Delivery Lab</h1>
+      <p>Synthetic data only. Create sample items to try the delivery journey.</p>
+    </header>
+    <section class="card" aria-labelledby="create-heading">
+      <h2 id="create-heading">Create an item</h2>
+      <form id="create-form" novalidate>
+        <label for="item-name">Item name</label>
+        <p id="name-help" class="help">Use 1–80 characters. Surrounding whitespace is removed.</p>
+        <input id="item-name" name="name" type="text" autocomplete="off"
+               aria-describedby="name-help name-error" aria-invalid="false">
+        <p id="name-error" class="field-error" hidden></p>
+        <button id="create-button" type="submit" disabled>Create</button>
+      </form>
+      <p id="status" role="status" aria-live="polite" aria-atomic="true">Loading items…</p>
+      <button id="refresh-button" type="button" class="secondary" hidden>Refresh list</button>
+      <noscript><p>JavaScript is needed to load and create items. Enable it and reload this page.</p></noscript>
+    </section>
+    <section class="card" id="items-section" aria-labelledby="items-heading" aria-busy="true">
+      <h2 id="items-heading">Items</h2>
+      <p id="item-count" class="help">Loading…</p>
+      <p id="empty" hidden>No items yet. Create the first item.</p>
+      <ul id="items"></ul>
+    </section>
+  </main>
+</body>
+</html>

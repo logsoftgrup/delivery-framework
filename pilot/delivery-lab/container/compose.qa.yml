@@ -1,0 +1,49 @@
+name: delivery-lab-qa
+services:
+  app:
+    image: ${DELIVERY_LAB_IMAGE:?Set the verified immutable C0 or C1 image identity}
+    pull_policy: never
+    container_name: delivery-lab-qa-app
+    labels:
+      com.logsoftgrup.pilot: delivery-lab
+      com.logsoftgrup.environment: qa
+      org.opencontainers.image.revision: ${DELIVERY_LAB_SOURCE_COMMIT:?Set the verified source SHA}
+    user: "10001:10001"
+    read_only: true
+    init: true
+    restart: unless-stopped
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 256m
+    cpus: 1
+    environment:
+      DELIVERY_LAB_ENV: qa
+      DELIVERY_LAB_DB_PATH: /data/items.sqlite3
+      DELIVERY_LAB_PORT: "8000"
+    ports:
+      - "127.0.0.1:18081:8000"
+    volumes:
+      - data:/data
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16777216,mode=1777
+    networks: [isolated]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; r=urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8000/readyz',headers={'Host':'127.0.0.1:18081'}),timeout=6); assert r.status == 200"]
+      interval: 30s
+      timeout: 7s
+      start_period: 10s
+      retries: 3
+networks:
+  isolated:
+    name: delivery-lab-qa-net
+    internal: true
+    labels:
+      com.logsoftgrup.pilot: delivery-lab
+      com.logsoftgrup.environment: qa
+volumes:
+  data:
+    name: delivery-lab-qa-data
+    labels:
+      com.logsoftgrup.pilot: delivery-lab
+      com.logsoftgrup.environment: qa
