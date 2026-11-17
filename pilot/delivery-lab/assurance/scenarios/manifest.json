@@ -1,0 +1,155 @@
+{
+  "schema": "delivery-lab.scenario-manifest.v1",
+  "candidate": "TS-1",
+  "task": "LOGA-22",
+  "author_agent_id": "ce8e0a2f-a532-45cb-abeb-a3937e9be71e",
+  "author_run_id": "f7e37c01-0b86-4fc7-8bcb-27606bd850a5",
+  "repository": "https://github.com/logsoftgrup/delivery-framework.git",
+  "publication_branch": "assurance/phase-b",
+  "candidate_commit_location": "Exact full SHA and this manifest SHA-256 in task publication packet; branch is locator only.",
+  "baseline": {
+    "commit": "3f0246514d8c8d4fee34aa5181d2f435303d3e6b",
+    "native_human_decision": "4ae65f45-e6b8-4080-81b3-bdf2e4cd6353",
+    "input_document_revision": "0f58973b-dd68-452e-b88d-c673c8a35fe7",
+    "files": [
+      {
+        "path": "pilot/delivery-lab/docs/acceptance.md",
+        "git_blob": "a2acdc0e752928cce3a15d2e53665207e5ac953b",
+        "sha256": "eb4a8d665e0c4eb42e29769129b8d4ea514e16b5ee0950b1843c386e1edfe0f8"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/accessibility.md",
+        "git_blob": "dea31f50837318da903aed33964d2dfd273e7cfa",
+        "sha256": "62a9199cbd064340809b04106b2fe04372fbda522d79cf016a59e26877aed9d9"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/api.md",
+        "git_blob": "394903ad456dcabb513ecc6dcbd52208c1835ce0",
+        "sha256": "d1f588a84c431460110b5dd69ba978534d45fa69f6a7fe15494bcc66dba7c4a5"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/architecture.md",
+        "git_blob": "7975da8635ba0e2e04ee12677b545d85eca51694",
+        "sha256": "804129eeaf71e60b497dbcb431901363f57c9ba9dceede7ae56e45ae5ccbe3b3"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/baseline-manifest.json",
+        "git_blob": "42e09de6504b009076f42bf03f9bbef3f1301ebd",
+        "sha256": "9a0ec3dcc8d52054a781a37eae4eb6faf0286b074747116a1045e71fd5b2bac0"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/runbook.md",
+        "git_blob": "618b855068e5a3cebd553a8aa23816d7a12dd982",
+        "sha256": "08538eb68fb16a98efbb6f73231d77ac96812f4f1fbe40a78d5ebcf6a572c10a"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/ui-reference.md",
+        "git_blob": "d09e188f2e25b937057584d2cd1f284a377b4b07",
+        "sha256": "d42c58e5e9bbfdcddb7c7b1bfc44996efe2c3c7a9fdd1497016c40e002a75000"
+      },
+      {
+        "path": "pilot/delivery-lab/docs/ui-reference.svg",
+        "git_blob": "5adbd7b9ec6e058ec3c32e77710bdd110b799f1e",
+        "sha256": "393ff8dd173cdf557837f43794a488f463efa1ec5d1e84dbb993506bfed5982f"
+      }
+    ]
+  },
+  "framework_commit": "5c594e3087d68a8862072998478864f6ee18a253",
+  "files": [
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/README.md",
+      "bytes": 6212,
+      "sha256": "8fbf09d330b33e3b6157255d78654b5f5302c60de51cb9c222bd24f883f7d9e9"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/accessibility.md",
+      "bytes": 12489,
+      "sha256": "e9b10a13c4ce02af510a0044089c3ebdec6e7d947fe47f7c26498d9343a70a7c"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/api.md",
+      "bytes": 10808,
+      "sha256": "3e7009f8adbbaaa723252b3654f06e45f8698b72dbbb78ee2a8554f74e81d638"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/browser-manual.md",
+      "bytes": 10146,
+      "sha256": "1f108f7f7f5da752cd393f75e3edb2467028a2fefa4178b23995770287a5f9b9"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/coverage.md",
+      "bytes": 3637,
+      "sha256": "1b3a19f9972ab99f74b425e8b6e1e0031b4f8db53f7d3337d857b016672d25aa"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/fixtures.json",
+      "bytes": 49890,
+      "sha256": "ee5a5ad816b6e6845f82f198ced12c58fa5b79ce11bb4112f91231f4c6bfd896"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/harness.md",
+      "bytes": 5721,
+      "sha256": "706085a95dbc2bbbb9a2ebba3102fd60bdd0c969c18525f768153bfe853082de"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/operations-lifecycle.md",
+      "bytes": 12497,
+      "sha256": "b69585d391165317b26155b1b5a6ecbcb34ee130502260c8e579e02fa5c0619f"
+    }
+  ],
+  "criteria": [
+    "B1",
+    "B2",
+    "T1",
+    "T2",
+    "V1",
+    "A1",
+    "U1",
+    "O1",
+    "O2",
+    "L1"
+  ],
+  "scope": "Scenario documentation and synthetic fixture specification only; no executable tests, app code, runtime examination or acceptance.",
+  "parameter_inventory": {
+    "name_variants": 100,
+    "raw_byte_variants": 12,
+    "trim_scalars": 25,
+    "wcag_A_AA_rows": 55
+  },
+  "open_expectations": [
+    {
+      "id": "OBS-01",
+      "scenarios": [
+        "SEC-01",
+        "SEC-02",
+        "SEC-03"
+      ],
+      "state": "UNRESOLVED",
+      "input_interaction": "5fecfd8f-80db-40be-86a5-7c24033d3672",
+      "requirement": "Original Engineer supplement and any required native baseline/TS amendment before exact rejection status/body/precedence freeze."
+    },
+    {
+      "id": "OBS-02",
+      "scenarios": [
+        "OPS-07",
+        "OPS-08",
+        "OPS-09"
+      ],
+      "state": "RETAINED_QUALIFICATION_RULE",
+      "requirement": "Exact C1 target and independently passed qualifying subset; no full-O2 prerequisite for starting O2; no C0 target or distinct-release claim."
+    }
+  ],
+  "runtime": {
+    "application_commit": null,
+    "suite_commit": null,
+    "image_digest": null,
+    "ci_run": null,
+    "observed_results": "NOT RUN; not authorized in TS"
+  },
+  "independent_review": {
+    "task": "LOGA-27",
+    "agent_id": "79ebc7d5-2399-4e63-aaff-a29207a852c1",
+    "state": "not yet examined"
+  },
+  "self_hash_rule": "Manifest omits its own content hash; publication task packet records it."
+}
