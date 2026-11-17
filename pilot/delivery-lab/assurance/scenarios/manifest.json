@@ -1,9 +1,9 @@
 {
   "schema": "delivery-lab.scenario-manifest.v1",
-  "candidate": "TS-1",
+  "candidate": "TS-2",
   "task": "LOGA-22",
   "author_agent_id": "ce8e0a2f-a532-45cb-abeb-a3937e9be71e",
-  "author_run_id": "f7e37c01-0b86-4fc7-8bcb-27606bd850a5",
+  "author_run_id": "e906da08-152b-4d88-a9c6-95733d4cf0c9",
   "repository": "https://github.com/logsoftgrup/delivery-framework.git",
   "publication_branch": "assurance/phase-b",
   "candidate_commit_location": "Exact full SHA and this manifest SHA-256 in task publication packet; branch is locator only.",
@@ -58,41 +58,61 @@
   "files": [
     {
       "path": "pilot/delivery-lab/assurance/scenarios/README.md",
-      "bytes": 6212,
-      "sha256": "8fbf09d330b33e3b6157255d78654b5f5302c60de51cb9c222bd24f883f7d9e9"
+      "file_revision": "TS-2",
+      "bytes": 6790,
+      "sha256": "37dc9adbc93c886d11f59e39726843fa156f462309c61b504c06a09c847d6423"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/accessibility.md",
+      "file_revision": "TS-1",
       "bytes": 12489,
       "sha256": "e9b10a13c4ce02af510a0044089c3ebdec6e7d947fe47f7c26498d9343a70a7c"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/api.md",
-      "bytes": 10808,
-      "sha256": "3e7009f8adbbaaa723252b3654f06e45f8698b72dbbb78ee2a8554f74e81d638"
+      "file_revision": "TS-2",
+      "bytes": 11361,
+      "sha256": "eab31863d153800eb89c6840beb1a88a02cefbdf804cc7cfe6b67d988a4db6de"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/browser-input.md",
+      "file_revision": "TS-2",
+      "bytes": 6950,
+      "sha256": "e9f63e5457a1e098f15ea48dfbef512cefd283d9ab73270d9bf69e9daf754471"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/browser-manual.md",
-      "bytes": 10146,
-      "sha256": "1f108f7f7f5da752cd393f75e3edb2467028a2fefa4178b23995770287a5f9b9"
+      "file_revision": "TS-2",
+      "bytes": 11082,
+      "sha256": "596ab96211976faa449c48113f2367787b74c5809ce61b636c1db6f15539c41f"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/coverage.md",
-      "bytes": 3637,
-      "sha256": "1b3a19f9972ab99f74b425e8b6e1e0031b4f8db53f7d3337d857b016672d25aa"
+      "file_revision": "TS-2",
+      "bytes": 5013,
+      "sha256": "136d32c306b9f496ee878ad5f2a051de3fe4174536f09844813150a6822a4fb0"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/fixtures.json",
-      "bytes": 49890,
-      "sha256": "ee5a5ad816b6e6845f82f198ced12c58fa5b79ce11bb4112f91231f4c6bfd896"
+      "file_revision": "TS-2",
+      "bytes": 201486,
+      "sha256": "fdbf49f59cf803d7646a63729a9a98eb2b8e85360aded1708348247018afc8f9"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/harness.md",
-      "bytes": 5721,
-      "sha256": "706085a95dbc2bbbb9a2ebba3102fd60bdd0c969c18525f768153bfe853082de"
+      "file_revision": "TS-2",
+      "bytes": 5983,
+      "sha256": "c5a57179df0de572f2299399754397bff157af3cb428bd59b452a7fa8246b3af"
+    },
+    {
+      "path": "pilot/delivery-lab/assurance/scenarios/impact-ts-2.md",
+      "file_revision": "TS-2",
+      "bytes": 5348,
+      "sha256": "7058b11c7012c2f13de2ebd5be8c20dbb9c9d6b6d22604ea80a5f6d14be092a2"
     },
     {
       "path": "pilot/delivery-lab/assurance/scenarios/operations-lifecycle.md",
+      "file_revision": "TS-1",
       "bytes": 12497,
       "sha256": "b69585d391165317b26155b1b5a6ecbcb34ee130502260c8e579e02fa5c0619f"
     }
@@ -111,10 +131,14 @@
   ],
   "scope": "Scenario documentation and synthetic fixture specification only; no executable tests, app code, runtime examination or acceptance.",
   "parameter_inventory": {
-    "name_variants": 100,
+    "name_variants": 102,
     "raw_byte_variants": 12,
     "trim_scalars": 25,
-    "wcag_A_AA_rows": 55
+    "wcag_A_AA_rows": 55,
+    "browser_entry_variants": 102,
+    "browser_cr_lf_sanitized_variants": 12,
+    "api_created_control_display_variants": 6,
+    "scenario_family_members": 88
   },
   "open_expectations": [
     {
@@ -149,7 +173,27 @@
   "independent_review": {
     "task": "LOGA-27",
     "agent_id": "79ebc7d5-2399-4e63-aaff-a29207a852c1",
-    "state": "not yet examined"
+    "state": "affected TS-2 examination not yet performed; TS-1 FAIL retained"
   },
-  "self_hash_rule": "Manifest omits its own content hash; publication task packet records it."
+  "self_hash_rule": "Manifest omits its own content hash; publication task packet records it.",
+  "previous_candidate": {
+    "name": "TS-1",
+    "commit": "8dee618fa6f0718e09aa39b54f0c9b231452a0f7",
+    "manifest_sha256": "b33db8bcf7f0e1752572dd8c05f94459c934bfb86d0060175d05b8eea17d8037",
+    "report_revision": "5d0e49bd-f23e-4ca2-9c16-596e78e03013",
+    "report_outcome": "FAIL",
+    "native_changes_requested_decision": "a45bf6c8-c45e-41b0-9f13-a87373e0a16b",
+    "source_review_revision": "146c26d0-ba07-42f6-97b5-a9d0344c438d"
+  },
+  "change_scope": {
+    "impact_document": "pilot/delivery-lab/assurance/scenarios/impact-ts-2.md",
+    "author_corrections_awaiting_review": [
+      "TSR-02",
+      "TSR-03"
+    ],
+    "unresolved": [
+      "TSR-01"
+    ],
+    "literal_api_original_cases_unchanged": true
+  }
 }

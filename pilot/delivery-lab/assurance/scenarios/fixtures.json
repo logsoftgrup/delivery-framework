@@ -1,5 +1,5 @@
 {
-  "revision": "TS-1",
+  "revision": "TS-2",
   "classification": "synthetic specification; not a runnable harness",
   "reset_scope": "isolated explicitly identified QA store only; accepted TC reset method required; never review",
   "trim_codepoints": [
@@ -300,7 +300,36 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "ascii-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "A",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "ascii-80",
@@ -310,7 +339,36 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "ascii-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "ascii-81",
@@ -320,7 +378,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "ascii-81/browser-entry",
+        "scenarios": [
+          "UI-02",
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "expected_control_scalar_count": 81,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "astral-1",
@@ -330,7 +418,36 @@
       "expected_stored_name": "\ud83d\udcd3",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "astral-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\ud83d\udcd3",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "\ud83d\udcd3",
+        "allowed_request_name_values": [
+          "\ud83d\udcd3"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\ud83d\udcd3",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "astral-80",
@@ -340,7 +457,36 @@
       "expected_stored_name": "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "astral-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3",
+        "allowed_request_name_values": [
+          "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "astral-81",
@@ -350,7 +496,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "astral-81/browser-entry",
+        "scenarios": [
+          "UI-02",
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3",
+        "expected_control_scalar_count": 81,
+        "expected_trimmed_value": "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3",
+        "allowed_request_name_values": [
+          "\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3\ud83d\udcd3"
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "ascii-padded-80",
@@ -360,7 +536,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "ascii-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\t\u000b\f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\t\u000b\f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+        "expected_control_scalar_count": 126,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\t\u000b\f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\t\u000b\f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "combining-80",
@@ -370,7 +576,36 @@
       "expected_stored_name": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "combining-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301",
+        "allowed_request_name_values": [
+          "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "combining-81",
@@ -380,7 +615,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "combining-81/browser-entry",
+        "scenarios": [
+          "UI-02",
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301x",
+        "expected_control_scalar_count": 81,
+        "expected_trimmed_value": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301x",
+        "allowed_request_name_values": [
+          "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301x"
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "precomposed-80",
@@ -390,7 +655,36 @@
       "expected_stored_name": "\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "precomposed-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9",
+        "allowed_request_name_values": [
+          "\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0009-padded-1",
@@ -400,7 +694,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0009-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\tA\t",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\tA\t",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0009-padded-80",
@@ -410,7 +734,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0009-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\t",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\t",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0009-only",
@@ -420,7 +774,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0009-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\t",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\t",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000A-padded-1",
@@ -430,7 +814,36 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000A-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "A",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000A-padded-80",
@@ -440,7 +853,36 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000A-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000A-only",
@@ -450,7 +892,36 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000A-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "",
+        "expected_control_scalar_count": 0,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000B-padded-1",
@@ -460,7 +931,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000B-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u000bA\u000b",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u000bA\u000b",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000B-padded-80",
@@ -470,7 +971,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000B-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u000bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u000b",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u000bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u000b",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000B-only",
@@ -480,7 +1011,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000B-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u000b",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u000b",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000C-padded-1",
@@ -490,7 +1051,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000C-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\fA\f",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\fA\f",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000C-padded-80",
@@ -500,7 +1091,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000C-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\f",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\f",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000C-only",
@@ -510,7 +1131,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000C-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\f",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\f",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000D-padded-1",
@@ -520,7 +1171,36 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000D-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "A",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000D-padded-80",
@@ -530,7 +1210,36 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000D-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-000D-only",
@@ -540,7 +1249,36 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-000D-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "",
+        "expected_control_scalar_count": 0,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0020-padded-1",
@@ -550,7 +1288,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0020-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": " A ",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          " A ",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0020-padded-80",
@@ -560,7 +1328,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0020-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": " AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          " AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0020-only",
@@ -570,7 +1368,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0020-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": " ",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          " ",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0085-padded-1",
@@ -580,7 +1408,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0085-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u0085A\u0085",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u0085A\u0085",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0085-padded-80",
@@ -590,7 +1448,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0085-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u0085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0085",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u0085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0085",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-0085-only",
@@ -600,7 +1488,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-0085-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u0085",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u0085",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-00A0-padded-1",
@@ -610,7 +1528,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-00A0-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u00a0A\u00a0",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u00a0A\u00a0",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-00A0-padded-80",
@@ -620,7 +1568,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-00A0-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u00a0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u00a0",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u00a0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u00a0",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-00A0-only",
@@ -630,7 +1608,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-00A0-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u00a0",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u00a0",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-1680-padded-1",
@@ -640,7 +1648,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-1680-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u1680A\u1680",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u1680A\u1680",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-1680-padded-80",
@@ -650,7 +1688,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-1680-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u1680AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u1680",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u1680AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u1680",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-1680-only",
@@ -660,7 +1728,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-1680-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u1680",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u1680",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2000-padded-1",
@@ -670,7 +1768,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2000-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2000A\u2000",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2000A\u2000",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2000-padded-80",
@@ -680,7 +1808,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2000-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2000",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2000",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2000-only",
@@ -690,7 +1848,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2000-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2000",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2000",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2001-padded-1",
@@ -700,7 +1888,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2001-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2001A\u2001",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2001A\u2001",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2001-padded-80",
@@ -710,7 +1928,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2001-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2001",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2001",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2001-only",
@@ -720,7 +1968,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2001-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2001",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2001",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2002-padded-1",
@@ -730,7 +2008,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2002-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2002A\u2002",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2002A\u2002",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2002-padded-80",
@@ -740,7 +2048,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2002-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2002",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2002",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2002-only",
@@ -750,7 +2088,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2002-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2002",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2002",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2003-padded-1",
@@ -760,7 +2128,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2003-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2003A\u2003",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2003A\u2003",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2003-padded-80",
@@ -770,7 +2168,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2003-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2003AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2003",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2003AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2003",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2003-only",
@@ -780,7 +2208,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2003-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2003",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2003",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2004-padded-1",
@@ -790,7 +2248,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2004-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2004A\u2004",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2004A\u2004",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2004-padded-80",
@@ -800,7 +2288,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2004-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2004",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2004",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2004-only",
@@ -810,7 +2328,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2004-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2004",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2004",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2005-padded-1",
@@ -820,7 +2368,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2005-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2005A\u2005",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2005A\u2005",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2005-padded-80",
@@ -830,7 +2408,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2005-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2005AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2005",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2005AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2005",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2005-only",
@@ -840,7 +2448,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2005-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2005",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2005",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2006-padded-1",
@@ -850,7 +2488,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2006-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2006A\u2006",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2006A\u2006",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2006-padded-80",
@@ -860,7 +2528,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2006-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2006",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2006",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2006-only",
@@ -870,7 +2568,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2006-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2006",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2006",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2007-padded-1",
@@ -880,7 +2608,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2007-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2007A\u2007",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2007A\u2007",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2007-padded-80",
@@ -890,7 +2648,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2007-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2007AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2007",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2007AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2007",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2007-only",
@@ -900,7 +2688,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2007-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2007",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2007",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2008-padded-1",
@@ -910,7 +2728,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2008-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2008A\u2008",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2008A\u2008",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2008-padded-80",
@@ -920,7 +2768,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2008-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2008AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2008",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2008AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2008",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2008-only",
@@ -930,7 +2808,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2008-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2008",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2008",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2009-padded-1",
@@ -940,7 +2848,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2009-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2009A\u2009",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2009A\u2009",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2009-padded-80",
@@ -950,7 +2888,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2009-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2009",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2009",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2009-only",
@@ -960,7 +2928,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2009-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2009",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2009",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-200A-padded-1",
@@ -970,7 +2968,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-200A-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u200aA\u200a",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u200aA\u200a",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-200A-padded-80",
@@ -980,7 +3008,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-200A-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u200aAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u200a",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u200aAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u200a",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-200A-only",
@@ -990,7 +3048,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-200A-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u200a",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u200a",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2028-padded-1",
@@ -1000,7 +3088,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2028-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2028A\u2028",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2028A\u2028",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2028-padded-80",
@@ -1010,7 +3128,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2028-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2028AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2028",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2028AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2028",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2028-only",
@@ -1020,7 +3168,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2028-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2028",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2028",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2029-padded-1",
@@ -1030,7 +3208,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2029-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2029A\u2029",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u2029A\u2029",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2029-padded-80",
@@ -1040,7 +3248,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2029-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2029AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2029",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u2029AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u2029",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-2029-only",
@@ -1050,7 +3288,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-2029-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u2029",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u2029",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-202F-padded-1",
@@ -1060,7 +3328,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-202F-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u202fA\u202f",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u202fA\u202f",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-202F-padded-80",
@@ -1070,7 +3368,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-202F-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u202fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u202f",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u202fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u202f",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-202F-only",
@@ -1080,7 +3408,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-202F-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u202f",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u202f",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-205F-padded-1",
@@ -1090,7 +3448,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-205F-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u205fA\u205f",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u205fA\u205f",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-205F-padded-80",
@@ -1100,7 +3488,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-205F-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u205fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u205f",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u205fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u205f",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-205F-only",
@@ -1110,7 +3528,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-205F-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u205f",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u205f",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-3000-padded-1",
@@ -1120,7 +3568,37 @@
       "expected_stored_name": "A",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-3000-padded-1/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u3000A\u3000",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "A",
+        "allowed_request_name_values": [
+          "\u3000A\u3000",
+          "A"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-3000-padded-80",
@@ -1130,7 +3608,37 @@
       "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-3000-padded-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u3000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u3000",
+        "expected_control_scalar_count": 82,
+        "expected_trimmed_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "allowed_request_name_values": [
+          "\u3000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u3000",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "trim-3000-only",
@@ -1140,7 +3648,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "trim-3000-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u3000",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\u3000",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "combined-trim-only",
@@ -1150,7 +3688,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "combined-trim-only/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\t\u000b\f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+        "expected_control_scalar_count": 23,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          "\t\u000b\f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "c0-sentinel",
@@ -1160,7 +3728,37 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "c0-sentinel/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": " \t ",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          " \t ",
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "empty",
@@ -1170,7 +3768,36 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "empty/browser-entry",
+        "scenarios": [
+          "UI-02"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "",
+        "expected_control_scalar_count": 0,
+        "expected_trimmed_value": "",
+        "allowed_request_name_values": [
+          ""
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "preserve-200B",
@@ -1180,7 +3807,36 @@
       "expected_stored_name": "\u200bA\u200b",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "preserve-200B/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u200bA\u200b",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "\u200bA\u200b",
+        "allowed_request_name_values": [
+          "\u200bA\u200b"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\u200bA\u200b",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "preserve-only-200B",
@@ -1190,7 +3846,36 @@
       "expected_stored_name": "\u200b",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "preserve-only-200B/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u200b",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "\u200b",
+        "allowed_request_name_values": [
+          "\u200b"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\u200b",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "preserve-FEFF",
@@ -1200,7 +3885,36 @@
       "expected_stored_name": "\ufeffA\ufeff",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "preserve-FEFF/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\ufeffA\ufeff",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "\ufeffA\ufeff",
+        "allowed_request_name_values": [
+          "\ufeffA\ufeff"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\ufeffA\ufeff",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "preserve-only-FEFF",
@@ -1210,7 +3924,36 @@
       "expected_stored_name": "\ufeff",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "preserve-only-FEFF/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\ufeff",
+        "expected_control_scalar_count": 1,
+        "expected_trimmed_value": "\ufeff",
+        "allowed_request_name_values": [
+          "\ufeff"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\ufeff",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "preserve-001C",
@@ -1220,7 +3963,36 @@
       "expected_stored_name": "\u001cA\u001c",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "preserve-001C/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u001cA\u001c",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "\u001cA\u001c",
+        "allowed_request_name_values": [
+          "\u001cA\u001c"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\u001cA\u001c",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": true,
+        "case_id": "preserve-001C/browser-display",
+        "scenario": "UI-10",
+        "expected_api_and_dom_text": "\u001cA\u001c",
+        "reason": "Literal accepted control-character name must survive API and display as text."
+      }
     },
     {
       "key": "preserve-0000",
@@ -1230,7 +4002,36 @@
       "expected_stored_name": "\u0000A\u0000",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "preserve-0000/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "\u0000A\u0000",
+        "expected_control_scalar_count": 3,
+        "expected_trimmed_value": "\u0000A\u0000",
+        "allowed_request_name_values": [
+          "\u0000A\u0000"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\u0000A\u0000",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": true,
+        "case_id": "preserve-0000/browser-display",
+        "scenario": "UI-10",
+        "expected_api_and_dom_text": "\u0000A\u0000",
+        "reason": "Literal accepted control-character name must survive API and display as text."
+      }
     },
     {
       "key": "interior",
@@ -1240,7 +4041,36 @@
       "expected_stored_name": "A\t\u00a0\nB",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "interior/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "A\t\u00a0B",
+        "expected_control_scalar_count": 4,
+        "expected_trimmed_value": "A\t\u00a0B",
+        "allowed_request_name_values": [
+          "A\t\u00a0B"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A\t\u00a0B",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": true,
+        "case_id": "interior/browser-display",
+        "scenario": "UI-10",
+        "expected_api_and_dom_text": "A\t\u00a0\nB",
+        "reason": "Literal accepted control-character name must survive API and display as text."
+      }
     },
     {
       "key": "nonlatin",
@@ -1250,7 +4080,36 @@
       "expected_stored_name": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1 \u540d \u062f\u0641\u062a\u0631",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "nonlatin/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1 \u540d \u062f\u0641\u062a\u0631",
+        "expected_control_scalar_count": 15,
+        "expected_trimmed_value": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1 \u540d \u062f\u0641\u062a\u0631",
+        "allowed_request_name_values": [
+          "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1 \u540d \u062f\u0641\u062a\u0631"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1 \u540d \u062f\u0641\u062a\u0631",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "markup",
@@ -1260,7 +4119,36 @@
       "expected_stored_name": "<img src=x onerror=\"alert(1)\">",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "markup/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "<img src=x onerror=\"alert(1)\">",
+        "expected_control_scalar_count": 30,
+        "expected_trimmed_value": "<img src=x onerror=\"alert(1)\">",
+        "allowed_request_name_values": [
+          "<img src=x onerror=\"alert(1)\">"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "<img src=x onerror=\"alert(1)\">",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "case",
@@ -1270,7 +4158,36 @@
       "expected_stored_name": "Pilot NOTEBOOK",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "case/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "natural_typing_or_paste",
+        "method_evidence_class": "natural_entry",
+        "expected_control_value": "Pilot NOTEBOOK",
+        "expected_control_scalar_count": 14,
+        "expected_trimmed_value": "Pilot NOTEBOOK",
+        "allowed_request_name_values": [
+          "Pilot NOTEBOOK"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "Pilot NOTEBOOK",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
     },
     {
       "key": "mixed-80",
@@ -1280,7 +4197,36 @@
       "expected_stored_name": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XY",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "mixed-80/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XY",
+        "expected_control_scalar_count": 80,
+        "expected_trimmed_value": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XY",
+        "allowed_request_name_values": [
+          "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XY"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XY",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": true,
+        "case_id": "mixed-80/browser-display",
+        "scenario": "UI-10",
+        "expected_api_and_dom_text": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XY",
+        "reason": "Literal accepted control-character name must survive API and display as text."
+      }
     },
     {
       "key": "mixed-81",
@@ -1290,7 +4236,115 @@
       "expected_stored_name": null,
       "expected_status": 422,
       "error_ref": "E-LENGTH",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "mixed-81/browser-entry",
+        "scenarios": [
+          "UI-02",
+          "UI-03"
+        ],
+        "literal_entry_applicability": "representable_with_exact_value_precondition",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XYZ",
+        "expected_control_scalar_count": 81,
+        "expected_trimmed_value": "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XYZ",
+        "allowed_request_name_values": [
+          "A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301A\t\u540d\ud83d\udcd3e\u0301XYZ"
+        ],
+        "expected_http_if_sent": 422,
+        "error_ref_if_sent": "E-LENGTH",
+        "local_rejection_allowed": true,
+        "expected_stored_name": null,
+        "record_effect": "unchanged",
+        "coverage_limit": "Check exact value before submit; control setup is not natural-entry evidence when method says controlled_browser_state_setup."
+      },
+      "api_created_browser_display": {
+        "required": false,
+        "case_id": null,
+        "scenario": null,
+        "expected_api_and_dom_text": null,
+        "reason": "Other UI-10/visual cases remain; not in the additional control-character display subset."
+      }
+    },
+    {
+      "key": "interior-cr",
+      "scenario": "UNI-06",
+      "request_name": "A\rB",
+      "raw_scalar_count": 3,
+      "expected_stored_name": "A\rB",
+      "expected_status": 201,
+      "error_ref": null,
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "interior-cr/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "AB",
+        "expected_control_scalar_count": 2,
+        "expected_trimmed_value": "AB",
+        "allowed_request_name_values": [
+          "AB"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AB",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": true,
+        "case_id": "interior-cr/browser-display",
+        "scenario": "UI-10",
+        "expected_api_and_dom_text": "A\rB",
+        "reason": "Literal accepted control-character name must survive API and display as text."
+      }
+    },
+    {
+      "key": "interior-crlf",
+      "scenario": "UNI-06",
+      "request_name": "A\r\nB",
+      "raw_scalar_count": 4,
+      "expected_stored_name": "A\r\nB",
+      "expected_status": 201,
+      "error_ref": null,
+      "record_effect": "one_new_tuple",
+      "literal_api_required": true,
+      "browser_input": {
+        "case_id": "interior-crlf/browser-entry",
+        "scenarios": [
+          "UI-03"
+        ],
+        "literal_entry_applicability": "not_representable_cr_lf_removed",
+        "method": "standard_native_value_setter_then_input_event",
+        "method_evidence_class": "controlled_browser_state_setup",
+        "expected_control_value": "AB",
+        "expected_control_scalar_count": 2,
+        "expected_trimmed_value": "AB",
+        "allowed_request_name_values": [
+          "AB"
+        ],
+        "expected_http_if_sent": 201,
+        "error_ref_if_sent": null,
+        "local_rejection_allowed": false,
+        "expected_stored_name": "AB",
+        "record_effect": "one_new_tuple",
+        "coverage_limit": "Sanitized control check does not prove literal API preservation or application trimming of removed CR/LF."
+      },
+      "api_created_browser_display": {
+        "required": true,
+        "case_id": "interior-crlf/browser-display",
+        "scenario": "UI-10",
+        "expected_api_and_dom_text": "A\r\nB",
+        "reason": "Literal accepted control-character name must survive API and display as text."
+      }
     }
   ],
   "raw_request_cases": [
@@ -1300,7 +4354,9 @@
       "display": "",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "truncated",
@@ -1308,7 +4364,9 @@
       "display": "{\"name\":",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "trailing-comma",
@@ -1316,7 +4374,9 @@
       "display": "{\"name\":\"A\",}",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "duplicate-keys",
@@ -1324,7 +4384,9 @@
       "display": "{\"name\":\"A\",\"name\":\"B\"}",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "nan",
@@ -1332,7 +4394,9 @@
       "display": "{\"name\":NaN}",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "infinity",
@@ -1340,7 +4404,9 @@
       "display": "{\"name\":Infinity}",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "negative-infinity",
@@ -1348,7 +4414,9 @@
       "display": "{\"name\":-Infinity}",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "lone-high",
@@ -1356,7 +4424,9 @@
       "display": "{\"name\":\"\\uD800\"}",
       "expected_status": 422,
       "error_ref": "E-UNICODE",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "lone-low",
@@ -1364,7 +4434,9 @@
       "display": "{\"name\":\"\\uDC00\"}",
       "expected_status": 422,
       "error_ref": "E-UNICODE",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "mixed-lone",
@@ -1372,7 +4444,9 @@
       "display": "{\"name\":\"A\\uD800\"}",
       "expected_status": 422,
       "error_ref": "E-UNICODE",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "paired",
@@ -1380,14 +4454,18 @@
       "display": "{\"name\":\"\\uD83D\\uDCD3\"}",
       "expected_status": 201,
       "error_ref": null,
-      "record_effect": "one_new_tuple"
+      "record_effect": "one_new_tuple",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     },
     {
       "key": "invalid-utf8",
       "wire_utf8_hex": "7b226e616d65223a22ff227d",
       "expected_status": 400,
       "error_ref": "E-JSON",
-      "record_effect": "unchanged"
+      "record_effect": "unchanged",
+      "browser_entry_applicability": "direct_api_only_raw_wire_fixture",
+      "browser_limit": "Native form does not emit this byte fixture; UI-12 separately covers server-error rendering."
     }
   ],
   "size_constructions": [
@@ -1434,5 +4512,11 @@
     "F-CREATE-REFRESH-FAIL": "Forward one POST, deliver 201, fail following GET; one new tuple and no resend.",
     "F-RECONCILE-FAIL": "Apply each ambiguous variant, fail first reconciliation GET, then permit deliberate GET; no extra POST until deliberate create after successful refresh."
   },
-  "future_method_requirement": "TC must provide independently reviewed isolation, fixture install, snapshot, interception/fault causality and cleanup methods. Impossible/unproved injection => UNAVAILABLE, not simulated application PASS."
+  "future_method_requirement": "TC must provide independently reviewed isolation, fixture install, snapshot, interception/fault causality and cleanup methods. Impossible/unproved injection => UNAVAILABLE, not simulated application PASS.",
+  "browser_input_spec": "browser-input.md; each browser_input is an additional predetermined oracle, never a replacement for the literal API case.",
+  "previous_candidate": {
+    "revision": "TS-1",
+    "commit": "8dee618fa6f0718e09aa39b54f0c9b231452a0f7",
+    "literal_api_oracles": "All original 100 name cases, 12 raw byte cases, errors, states, size and fault specifications retained; only browser metadata added and two literal interior CR/CRLF cases added."
+  }
 }

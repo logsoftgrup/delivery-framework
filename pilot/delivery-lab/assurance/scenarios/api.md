@@ -1,4 +1,4 @@
-# API and data scenarios — TS-1
+# API and data scenarios — TS-2
 
 Normative source: BASE-2 `api.md`, with architecture Host/Origin restriction pending OBS-01. Mode A except restarts A/O. Each case starts from F-SEED (or its explicit fixture) and a captured S0. Use an authorized Host, same-origin or non-browser accepted route, and `Content-Type: application/json` unless the case changes it. UTF-8 JSON property order is immaterial; additional properties, exact string values, numeric types and array order are significant. Exact error fixtures are in fixtures.json; no default framework errors may replace them. Request/response byte captures, tuple snapshots and fixture identity are required.
 
@@ -25,9 +25,9 @@ Normative source: BASE-2 `api.md`, with architecture Host/Origin restriction pen
 | API-17 negative/uncertain | Accepted injection produces internal failure before commit in one run and after commit in another | Both return 500 E-INTERNAL if HTTP response is delivered. Precommit fixture yields S1=S0; postcommit fixture yields one new tuple. Response alone establishes neither; UI reconciles in both (UI-07). No 503 substitute when outcome is unknown. Lost response is UI-08, not a presumed 500. |
 | API-18 positive/headers/schema | Read `/`, each API success and the specified errors on allowed route; examine published OpenAPI | API responses application/json, API+HTML Cache-Control:no-store. Exact Item, list, error and version key sets/types match baseline; no secret/path/input leakage. OpenAPI agrees with public schema/errors including 400 and custom 422; unavailable schema is recorded. Headers are compared semantically, not by case/order. |
 
-## Unicode parameter families (A; API plus UI string input)
+## Unicode parameter families (A; literal API, mapped browser variants)
 
-Every member is independently reset or snapshots sequentially with explicit expected deltas. `fixtures.json` records actual strings, scalar counts and expected trimmed names. Never use a browser maxlength guard as the oracle.
+Every member is independently reset or snapshots sequentially with explicit expected deltas. `fixtures.json` records unchanged literal API strings, scalar counts and expected trimmed names. Its separate `browser_input` member and [browser-input.md](browser-input.md) specify whether literal entry is representable, exact native control value, method and browser oracle. CR/LF literal preservation is API-only; sanitized single-line entry and browser display of API-created names are distinct required checks. Never use browser maxlength or an observed app value as the oracle.
 
 | ID | Parameter / action | Expected result |
 |---|---|---|
@@ -36,7 +36,7 @@ Every member is independently reset or snapshots sequentially with explicit expe
 | UNI-03 | Combining `e`+U+0301 repeated 40 (=80) and that plus `x` (=81); precomposed U+00E9 repeated 80 | 201/422/201; stored combining text is not normalized. |
 | UNI-04 | Each of the 25 named trim scalars on both ends of `A` and of 80 `A`; each by itself | Trim to A / 80 A (201); alone E-LENGTH (422), no write. |
 | UNI-05 | U+200B and U+FEFF individually and around `A`; U+001C and U+0000 around `A` via JSON escapes | Preserved exactly, nonempty scalar counts valid, 201. They are outside the explicit trim set. Log and display remain safe text. |
-| UNI-06 | `A` + interior tab, NBSP, newline + `B`; mixed non-Latin characters; valid surrogate pair encoding | Preserve all interior scalars, 201. No whitespace collapsing, normalization or case folding. |
+| UNI-06 | `A` + interior tab, NBSP, LF + `B`; separate interior CR and CRLF strings; mixed non-Latin characters; valid surrogate pair encoding | Literal API: preserve all interior scalars, 201, no normalization/case folding/collapsing. UI-03 uses each explicit browser control variant; UI-10 displays the API-created literal names. These are distinct identities and oracles, not substitutions. |
 | UNI-07 | Lone high/low surrogate escapes and mixed invalid sequence | API-only E-UNICODE; native text input cannot promise to transmit a lone surrogate, so no invented UI equivalent. |
 | UNI-08 | 80 vs 81 scalars made from interior whitespace and combining/non-Latin/astral characters | 201 vs E-LENGTH/422, unchanged rejected snapshot. Distinguishes byte/grapheme/string-unit counting. |
 
