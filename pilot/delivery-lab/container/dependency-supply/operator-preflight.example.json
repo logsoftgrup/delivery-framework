@@ -1,0 +1,29 @@
+{
+  "schema": "delivery-lab.operator-dependency-preflight.v1",
+  "verified": false,
+  "source_commit": null,
+  "workflow_sha256": null,
+  "operator_identity": null,
+  "operator_evidence_reference": null,
+  "assurance_review_reference": null,
+  "runner": {
+    "label": "ubuntu-24.04",
+    "image_version": null,
+    "os": "Linux",
+    "architecture": "x86_64",
+    "glibc": "2.39",
+    "python_driver": "3.12.3",
+    "docker_version": null
+  },
+  "allowed_https_hosts": [],
+  "verified_endpoints": [],
+  "permitted_retrieval_method": null,
+  "persistent_copy_destination": null,
+  "retention_days": 14,
+  "test_source_commit": "a94938bfcb37745c93843816a66d990cc46d888e",
+  "test_contract_path": "pilot/delivery-lab/assurance/supply/test-runtime-contract.v1.json",
+  "test_contract_sha256": "c8265cd20750d54677fba4944d4307a07820cdcebde408b6621b159b7093523d",
+  "note": "NON-EXECUTABLE EXAMPLE. Existing operator must supply measured facts and exact permitted endpoint/redirect inventory before dispatch; true alone is not evidence.",
+  "offline_isolation": "sudo-netns-loopback-v1",
+  "isolation_evidence_reference": null
+}

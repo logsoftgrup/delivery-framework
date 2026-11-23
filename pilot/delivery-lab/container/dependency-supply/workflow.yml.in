@@ -1,0 +1,178 @@
+# INERT REVIEW CANDIDATE. Only the authorized administrator may copy reviewed
+# bytes to .github/workflows/delivery-lab-dependency-supply.yml and dispatch.
+# Prior runner/endpoint/egress verification and independent review are required.
+name: Delivery Lab dependency supply
+on:
+  workflow_dispatch:
+    inputs:
+      source_commit:
+        description: Reviewed immutable supplier source SHA (40 lowercase hex)
+        required: true
+        type: string
+      bundle:
+        description: Separately identified bundle to acquire
+        type: choice
+        options: [app, test]
+        required: true
+      operator_preflight_json:
+        description: Non-secret verified operator receipt with runner/endpoints/review and retention facts
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: delivery-lab-dependency-supply
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+env:
+  SOURCE_COMMIT: ${{ inputs.source_commit }}
+  OPERATOR_PREFLIGHT_JSON: ${{ inputs.operator_preflight_json }}
+jobs:
+  app:
+    if: inputs.bundle == 'app'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Check explicit dispatch inputs
+        run: |
+          /usr/bin/python3.12 - <<'PY'
+          import json, os, re
+          source = os.environ['SOURCE_COMMIT']
+          receipt = json.loads(os.environ['OPERATOR_PREFLIGHT_JSON'])
+          assert re.fullmatch('[0-9a-f]{40}', source)
+          assert receipt['verified'] is True and receipt['source_commit'] == source
+          assert receipt['operator_evidence_reference'] and receipt['assurance_review_reference']
+          PY
+      - name: Retrieve exact reviewed supplier source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ inputs.source_commit }}
+          path: candidate
+          persist-credentials: false
+      - name: Retrieve actual administrator-published workflow bytes
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.workflow_sha }}
+          path: published
+          persist-credentials: false
+          sparse-checkout: .github/workflows/delivery-lab-dependency-supply.yml
+          sparse-checkout-cone-mode: false
+      - name: Resolve and archive APP dependencies on the target ABI
+        run: |
+          mkdir -p output
+          /usr/bin/python3.12 candidate/pilot/delivery-lab/container/dependency-supply/supply.py app \
+            --source "$SOURCE_COMMIT" --output "$GITHUB_WORKSPACE/output/app" \
+            --published-workflow "$GITHUB_WORKSPACE/published/.github/workflows/delivery-lab-dependency-supply.yml" \
+            > output/app-job.log 2>&1
+      - name: Publish complete APP supplier bundle
+        id: bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: delivery-lab-app-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            output/app-bundle.tar.gz
+            output/app-bundle.tar.gz.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+      - name: Record artifact identity for operator retention
+        env:
+          ARTIFACT_ID: ${{ steps.bundle.outputs.artifact-id }}
+          ARTIFACT_DIGEST: ${{ steps.bundle.outputs.artifact-digest }}
+        run: |
+          /usr/bin/python3.12 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          print(json.dumps({k: os.environ[k] for k in ['GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW_SHA','SOURCE_COMMIT','ARTIFACT_ID','ARTIFACT_DIGEST']}))
+          PY
+      - name: Preserve stage evidence including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: delivery-lab-app-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            output/*.log
+            output/app/*.json
+            output/app/*.log
+            output/app/*.lock
+          if-no-files-found: warn
+          retention-days: 14
+  test:
+    if: inputs.bundle == 'test'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Check explicit dispatch and Assurance input identities
+        run: |
+          /usr/bin/python3.12 - <<'PY'
+          import json, os, re
+          source = os.environ['SOURCE_COMMIT']
+          receipt = json.loads(os.environ['OPERATOR_PREFLIGHT_JSON'])
+          assert re.fullmatch('[0-9a-f]{40}', source)
+          assert receipt['verified'] is True and receipt['source_commit'] == source
+          assert receipt['operator_evidence_reference'] and receipt['assurance_review_reference']
+          assert re.fullmatch('[0-9a-f]{40}', receipt['test_source_commit'])
+          assert re.fullmatch('[0-9a-f]{64}', receipt['test_contract_sha256'])
+          assert receipt['test_contract_path']
+          PY
+      - name: Retrieve exact reviewed supplier source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ inputs.source_commit }}
+          path: candidate
+          persist-credentials: false
+      - name: Retrieve actual administrator-published workflow bytes
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.workflow_sha }}
+          path: published
+          persist-credentials: false
+          sparse-checkout: .github/workflows/delivery-lab-dependency-supply.yml
+          sparse-checkout-cone-mode: false
+      - name: Retrieve Assurance-owned TEST supply contract and helpers
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ fromJSON(inputs.operator_preflight_json).test_source_commit }}
+          path: assurance
+          persist-credentials: false
+      - name: Acquire and verify separate TEST dependencies
+        run: |
+          mkdir -p output
+          /usr/bin/python3.12 candidate/pilot/delivery-lab/container/dependency-supply/supply.py test \
+            --source "$SOURCE_COMMIT" --output "$GITHUB_WORKSPACE/output/test" \
+            --test-source "$GITHUB_WORKSPACE/assurance" \
+            --published-workflow "$GITHUB_WORKSPACE/published/.github/workflows/delivery-lab-dependency-supply.yml" \
+            > output/test-job.log 2>&1
+      - name: Publish complete TEST supplier bundle
+        id: bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: delivery-lab-test-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            output/test-bundle.tar.gz
+            output/test-bundle.tar.gz.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+      - name: Record artifact identity for operator retention
+        env:
+          ARTIFACT_ID: ${{ steps.bundle.outputs.artifact-id }}
+          ARTIFACT_DIGEST: ${{ steps.bundle.outputs.artifact-digest }}
+        run: |
+          /usr/bin/python3.12 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          print(json.dumps({k: os.environ[k] for k in ['GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW_SHA','SOURCE_COMMIT','ARTIFACT_ID','ARTIFACT_DIGEST']}))
+          PY
+      - name: Preserve stage evidence including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: delivery-lab-test-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            output/*.log
+            output/test/*.json
+            output/test/*.log
+            output/test/*.lock
+          if-no-files-found: warn
+          retention-days: 14

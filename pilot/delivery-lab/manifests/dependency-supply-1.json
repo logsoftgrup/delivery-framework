@@ -1,0 +1,113 @@
+{
+  "schema": "delivery-lab.dependency-supply-candidate.v1",
+  "candidate": "DEP-SUPPLY-1",
+  "state": "INERT_REVIEW_CANDIDATE_EXECUTION_UNAVAILABLE",
+  "source_commit_binding": "External publication receipt binds this manifest and immutable commit; no self-reference.",
+  "producer": "07abe685-fbb1-4658-9dbe-187d9fe540aa",
+  "producer_run": "7bb5cd62-5708-4590-bc89-e702d59162c2",
+  "authorized_branch": "smoke/phase-b",
+  "authority": {
+    "input_revision": "b38ebb1a-b75b-4ccd-b686-361d5b37aca9",
+    "direction_revision": "32ab8f98-5869-4abe-858c-2514942b8a9e",
+    "operator_interaction": "60503c13-ab72-44c1-a3d1-a0e2a5791e19",
+    "answer_sha256": "2f89f8f958f13229012f8af633f3403b49a1418b01ea98fc514637efb5794546"
+  },
+  "unchanged_application_preparation": "3656f0cac2165e6b8f126ec0094776c8a060b9b1",
+  "test_contract": {
+    "schema": "delivery-lab.test-supply-input-reference.v1",
+    "contract_commit": "a94938bfcb37745c93843816a66d990cc46d888e",
+    "contract_path": "pilot/delivery-lab/assurance/supply/test-runtime-contract.v1.json",
+    "contract_sha256": "c8265cd20750d54677fba4944d4307a07820cdcebde408b6621b159b7093523d",
+    "verification_path": "pilot/delivery-lab/assurance/supply/test-runtime-verification.v1.md",
+    "verification_sha256": "60b330174778aa4315e97125737a77def723a80306917654277a86de08b64c24",
+    "input_manifest_sha256": "76a8a98ab7a47ed6f0045b715c6495841a33466db826b8adf731cca115e978c6",
+    "publication_revision": "ab060d2c-5ca0-4b10-9a3d-e005c72b9ccc",
+    "suite_commit": "47199f8ad78ad0b1c1ebae1487acfa79cb644937",
+    "required_runtime": {
+      "python": "3.12.3",
+      "machine": "x86_64",
+      "glibc": "2.39",
+      "runner": "ubuntu-24.04"
+    },
+    "direct_requirements": [
+      "pytest==8.4.2",
+      "playwright==1.56.0"
+    ],
+    "resolver": "pip==26.2.2",
+    "state": "ASSURANCE_SPEC_RECEIVED_WORKFLOW_REVIEW_PENDING",
+    "selected_browser": "Derived from exact verified Playwright package registry descriptors: chromium, chromium-headless-shell, ffmpeg; default headless launch required",
+    "isolation_proposal": "sudo-netns-loopback-v1 on operator-verified CI runner; no host policy change; consumer confinement independently required",
+    "requirements_in_sha256": "c51b1dbaf227445df2c63f097c0ffa041fc43dd158f4fbb60f5771fc43ee6cec"
+  },
+  "workflow_path": "pilot/delivery-lab/container/dependency-supply/workflow.yml.in",
+  "intended_published_path": ".github/workflows/delivery-lab-dependency-supply.yml",
+  "publisher": "Daniela/OpenClaw via Bogdan existing admin session; no agent publication/dispatch",
+  "files": [
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/README.md",
+      "bytes": 15585,
+      "sha256": "b391b1df9b9d91d0e57033aee839e33ea5e3ed0eac597d9d472f096a99c7d74d"
+    },
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/app-input.json",
+      "bytes": 1003,
+      "sha256": "722aed96535641d8be12cf5685ff4b73ab0b148b51ca362bccd4e9120e3a5176"
+    },
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/operator-preflight.example.json",
+      "bytes": 1123,
+      "sha256": "8ceca00fa6aba0b3976ef9fce380eebe9966a3deb298700f43e2057b468774e7"
+    },
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/supply.py",
+      "bytes": 31057,
+      "sha256": "e266a1f2222edfb8e4a16be578316d0b0ba95173a0839d3498e1f11ac962f0d6"
+    },
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/test-input-interface.json",
+      "bytes": 1426,
+      "sha256": "d5e7aade9830458f200dc474208da4639b1f1ffc90fd6e1e28cbae182b5b5f67"
+    },
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/verify_bundle.py",
+      "bytes": 4903,
+      "sha256": "0870acb3e911bb25aa1df82554e85368edebc0f498e5f225128c3482ad59d37c"
+    },
+    {
+      "path": "pilot/delivery-lab/container/dependency-supply/workflow.yml.in",
+      "bytes": 7845,
+      "sha256": "9981ad3e051ce51799ac8652eb212f9b87f3af93593306f33641d1c0bc1bb110"
+    }
+  ],
+  "producer_checks": {
+    "passed": 27,
+    "total": 27,
+    "scope": "producer static preparation checks; no network acquisition, CI dispatch, container, browser or acceptance test execution",
+    "limitations": [
+      "GitHub workflow has not executed; actionlint not available/used",
+      "Runner/endpoint/egress/isolation facts not supplied",
+      "Registry/wheel/browser bytes unresolved",
+      "Assurance independent review pending"
+    ]
+  },
+  "unresolved": [
+    "Independent Assurance review of exact supplier source",
+    "Actual runner image/interpreter/action/tool availability/provenance",
+    "Complete exact permitted endpoint/redirect inventory and egress facts",
+    "Operator-verified process network-namespace isolation capability",
+    "Administrator publication/workflow commit and explicit dispatch receipt",
+    "Measured base/wheel/browser graph and bytes/locks/digests",
+    "Actual run/job/attempt/artifact identity and service digest",
+    "Verified protected persistent copy and independently measured checksum before expiry",
+    "Independent offline consumer verification"
+  ],
+  "not_claimed": [
+    "C0 release",
+    "TC.V qualification",
+    "source acceptance",
+    "pilot CI acceptance",
+    "working consumer browser",
+    "deployment",
+    "fresh-session/C1 proof"
+  ]
+}

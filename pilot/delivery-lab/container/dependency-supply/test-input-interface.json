@@ -1,0 +1,26 @@
+{
+  "schema": "delivery-lab.test-supply-input-reference.v1",
+  "contract_commit": "a94938bfcb37745c93843816a66d990cc46d888e",
+  "contract_path": "pilot/delivery-lab/assurance/supply/test-runtime-contract.v1.json",
+  "contract_sha256": "c8265cd20750d54677fba4944d4307a07820cdcebde408b6621b159b7093523d",
+  "verification_path": "pilot/delivery-lab/assurance/supply/test-runtime-verification.v1.md",
+  "verification_sha256": "60b330174778aa4315e97125737a77def723a80306917654277a86de08b64c24",
+  "input_manifest_sha256": "76a8a98ab7a47ed6f0045b715c6495841a33466db826b8adf731cca115e978c6",
+  "publication_revision": "ab060d2c-5ca0-4b10-9a3d-e005c72b9ccc",
+  "suite_commit": "47199f8ad78ad0b1c1ebae1487acfa79cb644937",
+  "required_runtime": {
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "glibc": "2.39",
+    "runner": "ubuntu-24.04"
+  },
+  "direct_requirements": [
+    "pytest==8.4.2",
+    "playwright==1.56.0"
+  ],
+  "resolver": "pip==26.2.2",
+  "state": "ASSURANCE_SPEC_RECEIVED_WORKFLOW_REVIEW_PENDING",
+  "selected_browser": "Derived from exact verified Playwright package registry descriptors: chromium, chromium-headless-shell, ffmpeg; default headless launch required",
+  "isolation_proposal": "sudo-netns-loopback-v1 on operator-verified CI runner; no host policy change; consumer confinement independently required",
+  "requirements_in_sha256": "c51b1dbaf227445df2c63f097c0ffa041fc43dd158f4fbb60f5771fc43ee6cec"
+}

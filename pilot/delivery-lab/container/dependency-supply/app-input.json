@@ -1,0 +1,28 @@
+{
+  "schema": "delivery-lab.app-dependency-input.v1",
+  "scope": "APP dependencies only; not application build or acceptance",
+  "target": {
+    "runner": "ubuntu-24.04",
+    "os": "Linux",
+    "machine": "x86_64",
+    "container_platform": "linux/amd64",
+    "python": "3.13.18",
+    "base_repository": "library/python",
+    "base_tag": "3.13.18-slim-bookworm"
+  },
+  "direct_requirements": [
+    "fastapi==0.165.0",
+    "uvicorn==0.54.0"
+  ],
+  "resolver": "pip==26.2.2",
+  "selection_provenance": {
+    "python_official_images_commit": "cf9d26d6c18941c210ad0c01f3dfe20e07a3aa54",
+    "fastapi_git_tag_object": "05e6df7e906c3decba377c37548019973f40bf15",
+    "uvicorn_git_tag_object": "3eb9a9ab9af69005c687728097461c1fd2a95db9",
+    "pip_git_tag_object": "147fd2284a1f3222683b4176269658a47a72de95"
+  },
+  "resolved_base_index_digest": null,
+  "resolved_base_platform_digest": null,
+  "resolved_wheel_hashes": null,
+  "state": "PROPOSED_SELECTIONS_REQUIRE_REGISTRY_RESOLUTION_AND_INDEPENDENT_REVIEW"
+}
