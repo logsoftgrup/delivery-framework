@@ -1,0 +1,22 @@
+{
+  "schema": "delivery-lab.test-supply-input-manifest.v1",
+  "contract_id": "TEST-SUPPLY-1",
+  "status": "PREPARATION_INPUT_NOT_SUPPLIED",
+  "source_task": "LOGA-23",
+  "repository": "https://github.com/logsoftgrup/delivery-framework.git",
+  "allowed_branch_locator": "assurance/phase-b",
+  "suite_commit": "47199f8ad78ad0b1c1ebae1487acfa79cb644937",
+  "suite_manifest_sha256": "f04388ba40df8e6868f5539924e3a491218566c4457df2732c98cc5ab6201dd8",
+  "suite_requirements_sha256": "c51b1dbaf227445df2c63f097c0ffa041fc43dd158f4fbb60f5771fc43ee6cec",
+  "files": {
+    "test-runtime-contract.v1.json": {
+      "bytes": 9524,
+      "sha256": "c8265cd20750d54677fba4944d4307a07820cdcebde408b6621b159b7093523d"
+    },
+    "test-runtime-verification.v1.md": {
+      "bytes": 12523,
+      "sha256": "60b330174778aa4315e97125737a77def723a80306917654277a86de08b64c24"
+    }
+  },
+  "self_reference_rule": "The enclosing commit and this manifest SHA-256 are recorded in the native publication packet."
+}

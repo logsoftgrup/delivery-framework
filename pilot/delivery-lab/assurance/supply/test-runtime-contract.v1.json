@@ -1,0 +1,119 @@
+{
+  "schema": "delivery-lab.test-supply-contract.v1",
+  "contract_id": "TEST-SUPPLY-1",
+  "state": "PREPARATION_INPUT_NOT_SUPPLIED",
+  "source_task": "LOGA-23",
+  "original_producer": "ce8e0a2f-a532-45cb-abeb-a3937e9be71e",
+  "workflow_producer": "LOGA-24 / original Engineer",
+  "coordinator": "LOGA-20 / CEO",
+  "publisher": "Daniela/OpenClaw through Bogdan's existing repository-admin browser session",
+  "authority": {
+    "interaction_id": "60503c13-ab72-44c1-a3d1-a0e2a5791e19",
+    "resolved_by_user_id": "aF9BHPX4C09h2VUawmZCQ2fRaahri14d",
+    "resolved_at": "2026-11-23T15:51:54.990Z",
+    "answer_sha256": "2f89f8f958f13229012f8af633f3403b49a1418b01ea98fc514637efb5794546",
+    "incoming_document_revision": "a5912a9c-fecc-4485-b673-4b6115031cdb",
+    "coordinator_direction_revision": "32ab8f98-5869-4abe-858c-2514942b8a9e",
+    "prior_supply_document_revision": "d2340c2f-5299-4150-9896-4c12604e21a4"
+  },
+  "candidate_inputs": {
+    "repository": "https://github.com/logsoftgrup/delivery-framework.git",
+    "suite_id": "TC-D1",
+    "suite_commit": "47199f8ad78ad0b1c1ebae1487acfa79cb644937",
+    "suite_path": "pilot/delivery-lab/assurance/tests/",
+    "suite_manifest_sha256": "f04388ba40df8e6868f5539924e3a491218566c4457df2732c98cc5ab6201dd8",
+    "baseline_commit": "a76f458655c9bd2a8ef95562651e0c9155f6a878",
+    "scenario_commit": "de46dadeb45c76280b0a99630303fb7666798789",
+    "requirements_path": "pilot/delivery-lab/assurance/tests/requirements.in",
+    "browser_launch": "playwright.chromium.launch(headless=True) using the package-selected default executable"
+  },
+  "test_target": {
+    "implementation": "CPython",
+    "python": "3.12.3",
+    "python_abi": "cp312; actual compatible wheel tags must be recorded",
+    "os": "Linux",
+    "machine": "x86_64",
+    "libc": "glibc",
+    "libc_version": "2.39",
+    "direct_requirements": {
+      "pytest": "8.4.2",
+      "playwright": "1.56.0"
+    },
+    "application_abi_must_not_substitute": "CPython 3.13 / slim Bookworm / linux-amd64 is the separate APP bundle",
+    "runner_selection": "Engineer must identify a standard GitHub-hosted Linux runner and exact target environment meeting these values; no runner availability or egress is asserted here",
+    "consumer": "Assurance's existing authorized worker, in a fresh task-owned isolated environment; exact target values must be checked before installation"
+  },
+  "execution_preconditions": [
+    "Exact reviewed Engineer workflow/helper commit, paths and SHA-256 values, with this input contract's enclosing commit and digest",
+    "Operator-verified standard hosted runner label, OS/image identity, architecture and exact Python selection/provenance; target glibc and ABI demonstrated",
+    "Complete exact required endpoint/redirect inventory for every action, tool, interpreter, index, wheel, browser and artifact operation, plus evidence that each is permitted on the selected runner",
+    "Only permitted repository-local/GitHub-authored actions, pinned to immutable identities, read-only default GITHUB_TOKEN, no new secrets or permission expansion",
+    "Explicit dependency-only trigger and inputs; no application deployment, host installation, full pilot acceptance run or automatic cross-system dispatch",
+    "Existing administrator publication route confirmed for the exact reviewed bytes; publication and execution receipts must be captured separately"
+  ],
+  "required_bundle": {
+    "root": "TEST/ (distinct archive and manifest identity from APP)",
+    "files": [
+      "requirements.in copied from the exact TC-D1 input",
+      "requirements.lock: all active direct/transitive requirements exactly pinned with SHA-256 hashes, compatible with the declared TEST target",
+      "wheelhouse/: complete binary wheel closure, including any explicitly required offline installer/bootstrap tools separately identified",
+      "wheel-inventory.json: distribution/version, filename, size, SHA-256, wheel tags, source URL, final URL/redirect chain and provenance for every wheel",
+      "resolver.json: interpreter/OS/libc/tags, resolver and installer versions, tool provenance/hashes, resolution command/flags, index configuration without secrets, dependency graph and complete resolution logs",
+      "browser/: complete package-selected Chromium cache/distribution closure for the suite's default headless launch, including headless shell or auxiliary binaries when required by that Playwright package",
+      "browser-inventory.json: Playwright wheel identity and embedded browser descriptor digest, selected platform, Chromium revision and browser version, every archive URL/final URL/checksum, extracted executable/path/tree checksums and permissions",
+      "runtime-libraries.json: exact OS/release, glibc version, required shared libraries with versions/paths and supplied-vs-already-present disposition, missing-library check and launch evidence",
+      "bundle-manifest.json: every payload file except this manifest, with relative path, byte length and SHA-256; separate manifest/archive digests in the operator handoff avoid self-reference",
+      "provenance.json: repository, source/workflow/helper commits and digests, operator, run/attempt/job IDs, runner image, artifact ID/name, creation/expiry times, service-reported digest and independently measured payload/archive digests",
+      "retrieval.json: existing permitted artifact retrieval method and operator-controlled persistent copy location, retention, copied-byte checksum and verification receipt before CI expiry",
+      "evidence/: full resolution, packaging, compatibility and producer smoke logs with real exit statuses, failures retained and bounded display summaries"
+    ],
+    "lock_rules": [
+      "Resolve on or explicitly for the exact TEST interpreter/platform and record the complete compatible tag set; universal and abi3 wheels are allowed only if compatible",
+      "No guessed transitive versions/hashes, unpinned dependency, editable/VCS reference, sdist build, hidden index fallback or unresolved environment marker",
+      "Every lock entry must map to supplied verified wheel bytes; every supplied installed wheel must map back to the lock and inventory",
+      "No reuse of APP wheels or APP lock as evidence of TEST compatibility",
+      "Installer/resolver/bootstrap tooling is separately pinned and inventoried; do not silently upgrade pip during offline consumption"
+    ],
+    "browser_rules": [
+      "Derive the selected browser revision from the verified Playwright 1.56.0 wheel's embedded browser descriptor and platform selection, not a mutable browser tag or remembered release number",
+      "Capture the complete distribution needed by chromium.launch(headless=True); chromium executable alone is insufficient if the default launch selects a headless shell",
+      "Preserve cache layout, executable modes and the exact executable actually launched; compare actual browser.version() and executable identity to the inventory",
+      "No host snap/system-browser substitution, executable_path override, on-demand browser download or host-package installation",
+      "A working CI browser is producer evidence only; consumer compatibility and launch remain to be verified in Assurance's authorized worker"
+    ]
+  },
+  "endpoint_inventory_contract": {
+    "status": "UNVERIFIED_ENGINEER_AND_OPERATOR_INPUT_REQUIRED",
+    "required_per_operation": [
+      "operation and job",
+      "exact initial URL and all required redirect/CDN/storage URLs or separately explained dynamic host rules",
+      "artifact/tool identity and immutable version/hash",
+      "access method and existing authority, without credentials",
+      "runner/environment to which permission applies",
+      "permitted-egress evidence reference and timestamp",
+      "observed result and any unresolved precondition"
+    ],
+    "categories": [
+      "GitHub workflow/action source and helper retrieval",
+      "exact CPython/runtime and installer tooling source",
+      "Python index metadata, resolver dependencies and all wheel file hosts",
+      "Playwright-selected Chromium/headless-shell/auxiliary archive hosts and redirects",
+      "GitHub artifact upload/download and operator persistent-copy transport"
+    ],
+    "worker_denied_routes": "Remain denied. This contract does not authorize local PyPI/Docker Hub retries, mirror/proxy changes or connection changes.",
+    "uncovered_endpoint": "Stop before execution; return exact capability/endpoint, proposed narrow change, responsible operator and rollback to CEO. No blanket access request."
+  },
+  "verification_contract": "test-runtime-verification.v1.md",
+  "unresolved_measured_values": [
+    "Engineer workflow/helper commit, paths and digests",
+    "selected runner and exact target runtime provenance",
+    "endpoint inventory and permitted-egress verification",
+    "resolved transitive versions, wheel filenames and hashes",
+    "resolver/installer/tool versions and hashes",
+    "Chromium revision/version, archive and extracted-file hashes, library inventory",
+    "publication/run/attempt/job/artifact identities and immutable payload digest",
+    "authorized retrieval method and persistent-copy checksum/retention",
+    "Assurance offline installation and headless launch evidence"
+  ],
+  "gate": "Any unresolved required field blocks execution/release or, for run-derived values, blocks supply acceptance at that later stage. Preparation is not TC.V qualification, source acceptance, application acceptance or permission to execute."
+}
