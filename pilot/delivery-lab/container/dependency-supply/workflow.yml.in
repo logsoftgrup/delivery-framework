@@ -95,6 +95,7 @@ jobs:
             output/*.log
             output/app/*.json
             output/app/*.log
+            output/app/*.txt
             output/app/*.lock
           if-no-files-found: warn
           retention-days: 14
@@ -173,6 +174,7 @@ jobs:
             output/*.log
             output/test/*.json
             output/test/*.log
+            output/test/*.txt
             output/test/*.lock
           if-no-files-found: warn
           retention-days: 14

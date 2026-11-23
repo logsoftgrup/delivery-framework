@@ -51,10 +51,37 @@ def digest(path):
 
 
 def run(args, log, env=None, cwd=None):
-    # Preserve complete command output and real status without flooding CI console.
-    with Path(log).open("wb") as stream:
-        result = subprocess.run(args, stdout=stream, stderr=subprocess.STDOUT, env=env, cwd=cwd)
-    require(result.returncode == 0, "command failed; inspect " + Path(log).name)
+    # Never serialize argv, cwd or environment: they may contain secret material.
+    log = Path(log)
+    result_path = log.with_name(log.name + ".result.json")
+    executable = Path(args[0]).name
+    if not re.fullmatch(r"python(?:\d+(?:\.\d+)*)?|docker|sudo|node|git|ldd|dpkg-query", executable):
+        executable = "other"
+    receipt = {
+        "schema": "delivery-lab.child-result.v1",
+        "command": {"stage": log.name, "executable": executable,
+                    "argument_count": len(args) - 1, "arguments_and_environment": "omitted"},
+        "outcome": "dispatch_started", "returncode": None,
+        "exit_status": None, "signal_number": None,
+        "stdout_stderr": {"path": log.name, "complete": False},
+    }
+    write(result_path, receipt)
+    try:
+        with log.open("wb") as stream:
+            result = subprocess.run(args, stdout=stream, stderr=subprocess.STDOUT, env=env, cwd=cwd)
+    except OSError as error:
+        # A launch error is distinct from a child exit; omit exception text/filename.
+        receipt.update(outcome="launch_error", error_type=type(error).__name__, errno=error.errno)
+        if log.exists():
+            receipt["stdout_stderr"].update(sha256=digest(log), bytes=log.stat().st_size)
+        write(result_path, receipt)
+        raise ValueError("command could not start; inspect " + result_path.name) from None
+    receipt.update(outcome="completed", returncode=result.returncode,
+                   exit_status=result.returncode if result.returncode >= 0 else None,
+                   signal_number=-result.returncode if result.returncode < 0 else None)
+    receipt["stdout_stderr"].update(complete=True, sha256=digest(log), bytes=log.stat().st_size)
+    write(result_path, receipt)
+    require(result.returncode == 0, "command failed; inspect " + result_path.name)
 
 
 class Downloads:

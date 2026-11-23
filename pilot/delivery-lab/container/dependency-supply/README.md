@@ -1,4 +1,11 @@
-# DEP-SUPPLY-1 — inert dependency-supply workflow candidate
+# DEP-SUPPLY-2 — inert dependency-supply workflow candidate
+
+This revision addresses DEP1-R-01 from independent report R1 at
+`7301fe9c6203adcab016c442e5529f29fbf747ff`, path
+`pilot/delivery-lab/assurance/supply/reviews/dep-supply-1-review.md`.
+It preserves DEP-SUPPLY-1 `11850c330b676270e11c95107e3cef3ddf588caa`
+and its report as immutable history. Corrected source requires fresh independent
+review on LOGA-23; this correction does not establish execution readiness.
 
 **Execution readiness: UNAVAILABLE.** This is Engineer-authored preparation for
 independent review on LOGA-23 and administrator handoff on LOGA-20. It is not an
@@ -170,7 +177,26 @@ path/size/hash/mode, complete wheel/lock/toolchain inventories and provenance.
 Browser/archive/library evidence is TEST-only; OCI/Docker/base evidence is APP-only.
 No bundle is published by the success step if acquisition/smoke fails. Separate
 diagnostic artifacts use an explicit `-diagnostics-` name and cannot satisfy supply.
-Logs retain real exit status. There is no `continue-on-error` or passing dummy job.
+Every `run()` invocation writes a sibling `<log-name>.result.json` before raising
+on child failure. It records the stage's fixed log name, an allowlisted executable
+name (otherwise `other`), argument count, raw Python subprocess return code,
+separate nonnegative exit status or signal number, and the combined stdout/stderr
+log's relative path, byte length and SHA-256. Raw argv, executable directories,
+cwd and environment are omitted from the receipt. Known call sites pass no
+credentials to child processes; the retained output remains protected evidence.
+
+The receipt starts as `dispatch_started` with null result fields. `completed`
+means that the child has returned, even for nonzero or signal failure; it is not
+a success claim. A launch error records its type and errno without exception
+text and leaves child result fields null. An interrupted wrapper may leave only
+the initial receipt; its child outcome is UNKNOWN and must be reconciled before
+retry. These evidence labels are not task statuses or retry authorization.
+
+The wrapper still fails on a nonzero/signal child result; its exit 1 is distinct
+from the saved child status, including a silent child exit 42. Receipts and their
+`.log`, `.json` or `.txt` output references are retained by both diagnostic upload
+paths. There is no `continue-on-error` or passing dummy job. Actual CI artifact
+retention remains to be verified on the administrator-operated runner.
 
 The archive's internal provenance records source/helper/workflow identities and
 run/attempt/runner facts. Actual GitHub artifact ID/service digest, creation/expiry
